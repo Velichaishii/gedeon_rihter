@@ -358,7 +358,7 @@ a, img, a:active, a:focus { outline: none; }
 
 .h4-content { font-family: "Roboto-Medium"; font-size: 23px; line-height: 26px; }
 
-.h2-content-wrap { margin-bottom: 50px; }
+.h2-content-wrap { margin-bottom: 60px; }
 
 .content-text-small { margin: 12px 0 12px 0; font-family: "Roboto-Regular"; font-size: 19px; line-height: 23px; }
 
@@ -485,6 +485,8 @@ a, img, a:active, a:focus { outline: none; }
 .circle-blue { width: 100px; height: 100px; display: inline-block; position: relative; background: #004aad; -webkit-border-radius: 50%; -moz-border-radius: 50%; border-radius: 50%; }
 
 .active { display: block; }
+
+.mobile-visible { display: none; }
 
 .visible { display: inline-block; }
 
