@@ -10,6 +10,7 @@
 
 <body>
     <div class="site-wrap">
+        <div class="site-wrap__overlay"></div>
         <header class="header">
             <nav class="menu-header container">
                 <ul class="menu-header__list-first-lvl">
@@ -71,7 +72,7 @@
                                 <span class="btn-b__dd-btn btn-b__dd-btn-share-white">
                                     <i class="btn-b__share-white"></i>
                                 </span>
-                                <ul class="btn-b__dd-list">
+                                <ul class="btn-b__dd-list popup">
                                     <li class="btn-b__dd-item">
                                         <a class="btn-b__dd-link" href="#">
                                                 <span class="btn-b__dd-ico">
@@ -123,7 +124,7 @@
                                 </ul>
                             </li>
                             <li class="btn-b-item">
-                                <span class="btn-b__dd-btn btn-b__dd-btn-drop-menu">
+                                <span class="btn-b__dd-btn btn-b__dd-btn-drop-menu popup_open">
                                     <i class="btn-b__burger"></i>
                                 </span>
                             </li>
@@ -155,10 +156,10 @@
                                     </span>
                                 </li>
                                 <li class="btn-b-item">
-                                    <span class="btn-b__dd-btn btn-b__dd-btn-share-white">
+                                    <span class="btn-b__dd-btn btn-b__dd-btn-share-white popup_open">
                                         <i class="btn-b__share-white"></i>
                                     </span>
-                                    <ul class="btn-b__dd-list">
+                                    <ul class="btn-b__dd-list popup">
                                         <li class="btn-b__dd-item">
                                             <a class="btn-b__dd-link" href="#">
                                                 <span class="btn-b__dd-ico">
@@ -210,7 +211,7 @@
                                     </ul>
                                 </li>
                                 <li class="btn-b-item">
-                                    <span class="btn-b__dd-btn btn-b__dd-btn-drop-menu">
+                                    <span class="btn-b__dd-btn btn-b__dd-btn-drop-menu popup_open">
                                         <i class="btn-b__burger"></i>
                                     </span>
                                 </li>
@@ -524,7 +525,7 @@
                 </div>
             </div>
         </footer>
-        <div class="drop-menu">
+        <div class="drop-menu popup">
             <span class="btn-cancel">
                 <i class="btn-cancel-ico-white"></i>
                 <i class="btn-cancel-ico-blue"></i>
@@ -583,7 +584,8 @@
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/jquery.formstyler.min.js"></script>
-    <script src="js/secondary.js"></script>
+
+
 </body>
 
 </html>

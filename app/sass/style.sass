@@ -8,6 +8,7 @@
 
 .site-wrap
     position: relative
+    overflow: hidden
 
 .container
     max-width: 1170px
@@ -333,15 +334,29 @@
     width: 375px
     height: 100%
     background: #ffffff
-    display: none
     position: absolute
     top: 0
-    right: 0
+    right: -100%
     z-index: 110
     overflow: auto
     text-align: center
     font-family: "Roboto-Regular"
     font-size: 21px
+    +trans()
+    &.visible
+        right: 0
+
+
+.site-wrap__overlay
+    position: absolute
+    z-index: 100
+    width: 100%
+    height: 100%
+    left: 0
+    top: 0
+    background: #000
+    opacity: 0.3
+    display: none
 
 .authoriz-b-dm
     padding: 25px 0
@@ -990,8 +1005,7 @@
 .active
     display: block
 
-.mobile-visible
-    display: none
+
 
 .visible
     display: inline-block
@@ -1693,3 +1707,4 @@
 
     .invisible
         display: none
+
