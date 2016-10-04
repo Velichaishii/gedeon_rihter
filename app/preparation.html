@@ -48,17 +48,17 @@
             </nav>
             <div class="bg-gradient-blue">
                 <div class="service-b container clearfix">
-                    <div class="logo-white-b">
-                        <a class="logo-white-link-emblem-small" href="#">
+                    <a class="logo-white-link" href="#">
+                        <span class="logo-white-emblem-small-wrap">
                             <img class="logo-white-img-emblem-small" src="img/logo_white-emblem-small.png">
-                        </a>
-                        <a class="logo-white-link-text" href="#">
+                        </span>
+                        <span class="logo-white-text-wrap">
                             <img class="logo-white-img-text" src="img/logo_white-text.png">
-                        </a>
-                        <a class="logo-white-link-emblem-big" href="#">
+                        </span>
+                        <span class="logo-white-emblem-big-wrap">
                             <img class="logo-white-img-emblem-big" src="img/logo_white-emblem-big.png">
-                        </a>
-                    </div>
+                        </span>
+                    </a>
                     <div class="btn-b-top mobile-visible">
                         <ul class="btn-list">
                             <li class="btn-b-item">
@@ -137,7 +137,7 @@
                             <li class="search-b__dd-item"><span class="dd-select">Қазақ</span></li>
                             <li class="search-b__dd-item"><span class="dd-select">English</span></li>
                         </ul>
-                        <input class="search-b__entry-field" type="text" value="Название и назначение" title="Название и назначение">
+                        <input class="search-b__entry-field" type="text" placeholder="Название и назначение" title="name">
                         <div class="search-b__dd search-b__dd_category">
                             <span>Категория<span class="triangle-blue"></span></span>
                             <ul class="search-b__dd-list search-b__dd-list_category">
@@ -303,34 +303,38 @@
                                 <a class="menu-footer__link" href="#">Главная</a>
                             </li>
                             <li class="menu-footer__item">
-                                <a class="menu-footer__link" href="#">Контакты</a>
-                            </li>
-                            <li class="menu-footer__item">
-                                <a class="menu-footer__link" href="#">Полезные советы</a>
-                            </li>
-                            <li class="menu-footer__item">
                                 <a class="menu-footer__link" href="#">Партнёрам</a>
-                            </li>
-                            <li class="menu-footer__item">
-                                <a class="menu-footer__link" href="#">Новости</a>
-                            </li>
-                            <li class="menu-footer__item">
-                                <a class="menu-footer__link" href="#">Подписка на новости</a>
                             </li>
                             <li class="menu-footer__item">
                                 <a class="menu-footer__link" href="#">О компании</a>
                             </li>
                             <li class="menu-footer__item">
+                                <a class="menu-footer__link" href="#">Препараты</a>
+                            </li>
+                        </ul>
+                        <ul class="menu-footer__list">
+                            <li class="menu-footer__item">
+                                <a class="menu-footer__link" href="#">Контакты</a>
+                            </li>
+                            <li class="menu-footer__item">
+                                <a class="menu-footer__link" href="#">Новости</a>
+                            </li>
+                            <li class="menu-footer__item">
                                 <a class="menu-footer__link" href="#">Написать нам</a>
                             </li>
                             <li class="menu-footer__item">
-                                <a class="menu-footer__link" href="#">Врачам</a>
-                            </li>
-                            <li class="menu-footer__item">
-                                <a class="menu-footer__link" href="#">Препараты</a>
-                            </li>
-                            <li class="menu-footer__item">
                                 <a class="menu-footer__link" href="#">Мероприятия</a>
+                            </li>
+                        </ul>
+                        <ul class="menu-footer__list">
+                            <li class="menu-footer__item">
+                                <a class="menu-footer__link" href="#">Полезные советы</a>
+                            </li>
+                            <li class="menu-footer__item">
+                                <a class="menu-footer__link" href="#">Подписка на новости</a>
+                            </li>
+                            <li class="menu-footer__item">
+                                <a class="menu-footer__link" href="#">Врачам</a>
                             </li>
                             <li class="menu-footer__item">
                                 <a class="menu-footer__link" href="#">Лицензии</a>
@@ -338,7 +342,7 @@
                         </ul>
                     </nav>
                     <div class="social-b">
-                        <p class="social-b__text">Присоединяйтесь к нам</p>
+                        <p class="social-b__text">Присоединяйтесь к нам:</p>
                         <div class="social-b__icons">
                             <a class="social-b__ico-wrap" href="#">
                                 <i class="social-b__ico social-b__f"></i>
@@ -367,7 +371,7 @@
             </div>
             <div class="copyright-b-wrap">
                 <div class="copyright-b container">
-                    <p class="text-center"><a class="text-white" href="#">Gedeon Richter</a> since 1901. All Rights Reserved. Made by aiga.kz</p>
+                    <p class="text-center"><a class="text-underline text-white" href="#">Gedeon Richter</a> since 1901. All Rights Reserved. Made by aiga.kz</p>
                 </div>
             </div>
         </footer>
@@ -385,14 +389,14 @@
             </div>
             <div class="authoriz-b-dm">
                 <div class="authoriz-b-dm__links">
-                    <a class="authoriz-b-dm__link" href="#">Вход</a>
+                    <span class="authoriz-b-dm__df-entry" href="#">Вход</span>
                     <span class="text-light-blue">/</span>
                     <a class="authoriz-b-dm__link" href="#">Регистрация</a>
                 </div>
                 <form class="authoriz-b-dm__form" method="post">
-                    <input class="entry-field entry-field_authoriz" type="text" value="Логин" title="Login">
-                    <input class="entry-field entry-field_authoriz" type="text" value="Пароль" title="Password">
-                    <input type="submit" class="btn-authoriz" value="Войти">
+                    <input class="entry-field entry-field_authoriz" type="text" placeholder="Логин" title="Login">
+                    <input class="entry-field entry-field_authoriz" type="text" placeholder="Пароль" title="Password">
+                    <button class="btn-authoriz" type="submit">Войти</button>
                 </form>
             </div>
             <nav class="drop-menu__nav">

@@ -48,17 +48,17 @@
             </nav>
             <div class="bg-gradient-blue">
                 <div class="service-b container clearfix">
-                    <div class="logo-white-b">
-                        <a class="logo-white-link-emblem-small" href="#">
+                    <a class="logo-white-link" href="#">
+                        <span class="logo-white-emblem-small-wrap">
                             <img class="logo-white-img-emblem-small" src="img/logo_white-emblem-small.png">
-                        </a>
-                        <a class="logo-white-link-text" href="#">
+                        </span>
+                        <span class="logo-white-text-wrap">
                             <img class="logo-white-img-text" src="img/logo_white-text.png">
-                        </a>
-                        <a class="logo-white-link-emblem-big" href="#">
+                        </span>
+                        <span class="logo-white-emblem-big-wrap">
                             <img class="logo-white-img-emblem-big" src="img/logo_white-emblem-big.png">
-                        </a>
-                    </div>
+                        </span>
+                    </a>
                     <div class="btn-b-top mobile-visible">
                         <ul class="btn-list">
                             <li class="btn-b-item">
@@ -137,7 +137,7 @@
                             <li class="search-b__dd-item"><span class="dd-select">Қазақ</span></li>
                             <li class="search-b__dd-item"><span class="dd-select">English</span></li>
                         </ul>
-                        <input class="search-b__entry-field" type="text" value="Название и назначение" title="Название и назначение">
+                        <input class="search-b__entry-field" type="text" placeholder="Название и назначение" title="name">
                         <div class="search-b__dd search-b__dd_category">
                             <span>Категория<span class="triangle-blue"></span></span>
                             <ul class="search-b__dd-list search-b__dd-list_category">
@@ -226,57 +226,70 @@
                 </div>
             </div>
         </header>
-        <section class="contacts-b-wrap container mobile-page-start">
-            <h2 class="h2-content h2-content_contacts">Контакты</h2>
-            <div class="contacts-b">
-                <ul class="contacts-b__list">
-                    <li class="contacts-b__item">
-                        <span class="contacts-b__ico-wrap">
-                            <i class="contacts-b__ico contacts-b__ico-address"></i>
-                        </span>
-                        <span class="contacts-b__text-right">Адрес:</span>
-                    </li>
-                    <li class="contacts-b__item">
-                        Республика Казахстан<br>
-                        050008, г. Алматы<br>
-                        ул. Толе би 187
-                    </li>
-                    <li class="contacts-b__item">
-                        <span class="contacts-b__ico-wrap">
-                            <i class="contacts-b__ico contacts-b__ico-tel"></i>
-                        </span>
-                        <span class="contacts-b__text-right">Телефон:</span>
-                    </li>
-                    <li class="contacts-b__item">
-                        <a href="tel:+77273796619">+7 727 3796619</a><br>
-                        <a href="tel:+77272582622">+7 727 2582622</a>
-                    </li>
-                    <li class="contacts-b__item">
-                        <span class="contacts-b__ico-wrap">
-                            <i class="contacts-b__ico contacts-b__ico-fax"></i>
-                        </span>
-                        <span class="contacts-b__text-right">Факс:</span>
-                    </li>
-                    <li class="contacts-b__item">+7 727 2582623</li>
-                    <li class="contacts-b__item">
-                        <span class="contacts-b__ico-wrap">
-                            <i class="contacts-b__ico contacts-b__ico-e-mail"></i>
-                        </span>
-                        <span class="contacts-b__text-right">E-mail:</span>
-                    </li>
-                    <li class="contacts-b__item">
-                        <a href="mailto:info@richter.kz">info@richter.kz</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="feedback-b">
-                <p class="feedback-b__message">Если возникли вопросы - напишите нам:</p>
-                <form class="feedback-b__form clearfix" method="post">
-                    <input class="entry-field entry-field__left" type="text" title="name" value="Имя">
-                    <input class="entry-field entry-field__right" type="text" title="e-mail" value="Email">
-                    <textarea class="entry-field entry-field_textarea" title="question">Вопрос</textarea>
-                    <input type="submit" class="btn btn_blue btn-contacts" value="Отправить">
-                </form>
+        <section class="contacts-wrap mobile-page-start">
+            <div class="container">
+                <h2 class="h2-content h2-content_contacts">Контакты</h2>
+                <div class="contacts-b-wrap">
+                    <div class="contacts-b">
+                        <ul class="contacts-b__list">
+                            <li class="contacts-b__item">
+                                <div class="contacts-b__left-b">
+                                    <span class="contacts-b__ico-wrap">
+                                        <i class="contacts-b__ico contacts-b__ico-address"></i>
+                                    </span>
+                                    Адрес:
+                                </div>
+                                <div class="contacts-b__right-b">
+                                    Республика Казахстан<br>
+                                    050008, г. Алматы<br>
+                                    ул. Толе би 18
+                                </div>
+                            </li>
+                            <li class="contacts-b__item">
+                                <div class="contacts-b__left-b">
+                                    <span class="contacts-b__ico-wrap">
+                                        <i class="contacts-b__ico contacts-b__ico-tel"></i>
+                                    </span>
+                                    Телефон:
+                                </div>
+                                <div class="contacts-b__right-b">
+                                    <a href="tel:+77273796619">+7 727 3796619</a><br>
+                                    <a href="tel:+77272582622">+7 727 2582622</a>
+                                </div>
+                            </li>
+                            <li class="contacts-b__item">
+                                <div class="contacts-b__left-b">
+                                    <span class="contacts-b__ico-wrap">
+                                        <i class="contacts-b__ico contacts-b__ico-fax"></i>
+                                    </span>
+                                    Факс:
+                                </div>
+                                <div class="contacts-b__right-b">
+                                    +7 727 2582623
+                                </div>
+                            <li class="contacts-b__item">
+                                <div class="contacts-b__left-b">
+                                    <span class="contacts-b__ico-wrap">
+                                        <i class="contacts-b__ico contacts-b__ico-e-mail"></i>
+                                    </span>
+                                    E-mail:
+                                </div>
+                                <div class="contacts-b__right-b">
+                                    <a href="mailto:info@richter.kz">info@richter.kz</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="feedback-b">
+                        <p class="feedback-b__message">Если возникли вопросы - напишите нам:</p>
+                        <form class="feedback-b__form clearfix" method="post">
+                            <input class="entry-field entry-field__left" type="text" title="name" placeholder="Имя">
+                            <input class="entry-field entry-field__right" type="text" title="e-mail" placeholder="Email">
+                            <textarea class="entry-field entry-field_textarea" title="question" placeholder="Вопрос"></textarea>
+                            <input type="submit" class="btn btn_blue btn-contacts" value="Отправить">
+                        </form>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="location-b">
@@ -296,34 +309,38 @@
                                 <a class="menu-footer__link" href="#">Главная</a>
                             </li>
                             <li class="menu-footer__item">
-                                <a class="menu-footer__link" href="#">Контакты</a>
-                            </li>
-                            <li class="menu-footer__item">
-                                <a class="menu-footer__link" href="#">Полезные советы</a>
-                            </li>
-                            <li class="menu-footer__item">
                                 <a class="menu-footer__link" href="#">Партнёрам</a>
-                            </li>
-                            <li class="menu-footer__item">
-                                <a class="menu-footer__link" href="#">Новости</a>
-                            </li>
-                            <li class="menu-footer__item">
-                                <a class="menu-footer__link" href="#">Подписка на новости</a>
                             </li>
                             <li class="menu-footer__item">
                                 <a class="menu-footer__link" href="#">О компании</a>
                             </li>
                             <li class="menu-footer__item">
+                                <a class="menu-footer__link" href="#">Препараты</a>
+                            </li>
+                        </ul>
+                        <ul class="menu-footer__list">
+                            <li class="menu-footer__item">
+                                <a class="menu-footer__link" href="#">Контакты</a>
+                            </li>
+                            <li class="menu-footer__item">
+                                <a class="menu-footer__link" href="#">Новости</a>
+                            </li>
+                            <li class="menu-footer__item">
                                 <a class="menu-footer__link" href="#">Написать нам</a>
                             </li>
                             <li class="menu-footer__item">
-                                <a class="menu-footer__link" href="#">Врачам</a>
-                            </li>
-                            <li class="menu-footer__item">
-                                <a class="menu-footer__link" href="#">Препараты</a>
-                            </li>
-                            <li class="menu-footer__item">
                                 <a class="menu-footer__link" href="#">Мероприятия</a>
+                            </li>
+                        </ul>
+                        <ul class="menu-footer__list">
+                            <li class="menu-footer__item">
+                                <a class="menu-footer__link" href="#">Полезные советы</a>
+                            </li>
+                            <li class="menu-footer__item">
+                                <a class="menu-footer__link" href="#">Подписка на новости</a>
+                            </li>
+                            <li class="menu-footer__item">
+                                <a class="menu-footer__link" href="#">Врачам</a>
                             </li>
                             <li class="menu-footer__item">
                                 <a class="menu-footer__link" href="#">Лицензии</a>
@@ -331,7 +348,7 @@
                         </ul>
                     </nav>
                     <div class="social-b">
-                        <p class="social-b__text">Присоединяйтесь к нам</p>
+                        <p class="social-b__text">Присоединяйтесь к нам:</p>
                         <div class="social-b__icons">
                             <a class="social-b__ico-wrap" href="#">
                                 <i class="social-b__ico social-b__f"></i>
@@ -360,7 +377,7 @@
             </div>
             <div class="copyright-b-wrap">
                 <div class="copyright-b container">
-                    <p class="text-center"><a class="text-white" href="#">Gedeon Richter</a> since 1901. All Rights Reserved. Made by aiga.kz</p>
+                    <p class="text-center"><a class="text-underline text-white" href="#">Gedeon Richter</a> since 1901. All Rights Reserved. Made by aiga.kz</p>
                 </div>
             </div>
         </footer>
@@ -378,14 +395,14 @@
             </div>
             <div class="authoriz-b-dm">
                 <div class="authoriz-b-dm__links">
-                    <a class="authoriz-b-dm__link" href="#">Вход</a>
+                    <span class="authoriz-b-dm__df-entry" href="#">Вход</span>
                     <span class="text-light-blue">/</span>
                     <a class="authoriz-b-dm__link" href="#">Регистрация</a>
                 </div>
                 <form class="authoriz-b-dm__form" method="post">
-                    <input class="entry-field entry-field_authoriz" type="text" value="Логин" title="Login">
-                    <input class="entry-field entry-field_authoriz" type="text" value="Пароль" title="Password">
-                    <input type="submit" class="btn-authoriz" value="Войти">
+                    <input class="entry-field entry-field_authoriz" type="text" placeholder="Логин" title="Login">
+                    <input class="entry-field entry-field_authoriz" type="text" placeholder="Пароль" title="Password">
+                    <button class="btn-authoriz" type="submit">Войти</button>
                 </form>
             </div>
             <nav class="drop-menu__nav">

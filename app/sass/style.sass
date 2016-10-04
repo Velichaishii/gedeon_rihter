@@ -67,12 +67,13 @@
     position: relative
     text-align: center
 
-.logo-white-b
+.logo-white-link
     width: 211px
     margin: 5px 20px 0 0
     float: left
+    display: block
 
-.logo-white-link-emblem-small
+.logo-white-emblem-small-wrap
     width: 31px
     height: 31px
     margin-right: 10px
@@ -84,7 +85,7 @@
     display: inline-block
     font-size: 0
 
-.logo-white-link-text
+.logo-white-text-wrap
     width: 160px
     height: 31px
     display: inline-block
@@ -95,7 +96,7 @@
     display: inline-block
     font-size: 0
 
-.logo-white-link-emblem-big
+.logo-white-emblem-big-wrap
     width: 41px
     height: 39px
     display: none
@@ -108,30 +109,11 @@
 
 .search-b
     width: calc(100% - 463px)
-    padding: 0 321px 0 71px
+    padding: 0 336px 0 85px
     display: inline-block
     position: relative
     text-align: left
     font-size: 0
-
-.search-b__dd
-    padding: 12px 10px 11px 10px
-    display: inline-block
-    font-family: "Roboto-Regular"
-    background: #ffffff
-    font-size: 17px
-    position: relative
-    cursor: pointer
-
-.search-b__dd-list
-    margin-top: 1px
-    border: 1px solid #eaeaea
-    background: #ffffff
-    position: absolute
-    top: 100%
-    left: 0
-    z-index: 20
-    font-size: 19px
 
 .search-b__dd-list_lang
     min-width: 200px
@@ -141,20 +123,14 @@
     min-width: 320px
     display: none
 
-.search-b__dd-item
-    border-top: 1px solid #eaeaea
-
-    &:first-child
-        border-top: none
-
 .search-b__dd_lang
-    width: 70px
+    width: 84px
     position: absolute
     top: 0
     left: 0
 
 .search-b__dd_category
-    width: 160px
+    width: 175px
     position: absolute
     top: 0
     right: 161px
@@ -285,12 +261,14 @@
     vertical-align: top
 
 .menu-footer__list
+    width: 33.33%
+    display: inline-block
     color: #FFFFFF
     font-family: "Roboto-Regular"
     font-size: 0
 
 .menu-footer__item
-    width: 33.33%
+    width: 100%
     padding: 0 10px 10px 0
     display: inline-block
     vertical-align: top
@@ -371,9 +349,15 @@
     padding: 25px 0
 
 .authoriz-b-dm__links
-    padding-bottom: 30px
+    margin-bottom: 30px
 
 .authoriz-b-dm__link
+    &:hover
+        color: #004aad
+
+.authoriz-b-dm__df-entry
+    cursor: pointer
+
     &:hover
         color: #004aad
 
@@ -513,9 +497,11 @@
 .tape-b__link
     display: block
 
-.contacts-b-wrap
+.contacts-wrap
     padding-top: 20px
     padding-bottom: 80px
+
+.contacts-b-wrap
     font-size: 0
 
 .contacts-b
@@ -525,23 +511,30 @@
     font-family: "Roboto-Regular"
 
 .contacts-b__list
-    width: 350px
+    width: 100%
     font-size: 0
 
 .contacts-b__item
-    width: 40%
+    width: 100%
     padding: 0 20px 20px 0
     display: inline-block
     vertical-align: top
     font-size: 19px
 
-    &:nth-child(2n)
-        width: 60%
-        padding-right: 0
+.contacts-b__left-b
+    width: 125px
+    height: 100%
+    float: left
+    text-align: right
+    font-family: "Roboto-Medium"
+
+.contacts-b__right-b
+    width: calc(100% - 125px)
+    padding-left: 20px
+    float: right
 
 .contacts-b__text-right
     float: right
-    font-family: "Roboto-Medium"
 
 .feedback-b
     width: 50%
@@ -575,8 +568,7 @@
 
 .contacts-b__ico-wrap
     width: 20px
-    display: inline-block
-    vertical-align: middle
+    float: left
     text-align: center
 
 .contacts-b__ico
@@ -618,6 +610,10 @@
 .text-light-blue
     color: #008dc5
 
+.text-underline
+    &:hover
+        text-decoration: underline
+
 .content-wrap
     padding-top: 30px
     padding-bottom: 80px
@@ -627,13 +623,13 @@
     padding-bottom: 0
 
 .content-left-b
-    width: 65%
+    width: 68%
     padding-right: 30px
     display: inline-block
     vertical-align: top
 
 .content-right-b
-    width: 30%
+    width: 32%
     display: inline-block
     vertical-align: top
 
@@ -1019,10 +1015,10 @@
     display: none
 
 @media screen and (max-width: 1110px)
-    .logo-white-b
+    .logo-white-link
         width: 31px
 
-    .logo-white-link-text
+    .logo-white-text-wrap
         display: none
 
     .search-b
@@ -1039,13 +1035,13 @@
     .service-b
         text-align: left
 
-    .logo-white-b
+    .logo-white-link
         width: 211px
         margin: 0 auto 20px auto
         display: block
         float: none
 
-    .logo-white-link-text
+    .logo-white-text-wrap
         display: inline-block
 
     .search-b
@@ -1083,19 +1079,6 @@
 
     .dd-select
         padding: 8px 20px
-
-    .search-b__dd_lang
-        width: 70px
-        position: absolute
-        top: 0
-        left: 0
-
-    .search-b__dd_category
-        width: 160px
-        position: absolute
-        top: 0
-        right: 161px
-        border-left: 1px solid #3c3d42
 
     .search-b__entry-field
         width: 100%
@@ -1146,12 +1129,15 @@
     .menu-footer
         width: 100%
 
-    .menu-footer__item
+    .menu-footer__list
         width: 37.5%
-        font-size: 15px
 
-        &:nth-child(3n)
+        &:last-child
             width: 25%
+
+    .menu-footer__item
+        width: 100%
+        font-size: 15px
 
     .social-b
         width: 100%
@@ -1238,14 +1224,12 @@
     .tape-b__link-img
         margin-bottom: 15px
 
-    .contacts-b-wrap
+    .contacts-wrap
         padding-top: 0
         padding-bottom: 60px
 
-    .contacts-b
-        .contacts-b__list
-            .contacts-b__item
-                font-size: 15px
+    .contacts-b__item
+        font-size: 15px
 
     .feedback-b
         .feedback-b__message
@@ -1424,6 +1408,7 @@
         z-index: 50
 
     .container
+        min-width: 320px
         padding-left: 20px
         padding-right: 20px
 
@@ -1432,19 +1417,19 @@
         padding-bottom: 20px
         text-align: left
 
-    .logo-white-b
+    .logo-white-link
         width: 41px
         margin: 0
         display: block
         float: left
 
-    .logo-white-link-emblem-small
+    .logo-white-emblem-small-wrap
         display: none
 
-    .logo-white-link-text
+    .logo-white-text-wrap
         display: none
 
-    .logo-white-link-emblem-big
+    .logo-white-emblem-big-wrap
         display: block
 
     .search-b
@@ -1595,7 +1580,7 @@
         &:last-child
             padding-bottom: 0
 
-    .contacts-b-wrap
+    .contacts-wrap
         padding-top: 10px
         padding-bottom: 40px
 
@@ -1629,8 +1614,7 @@
         padding-top: 30px
 
     .h2-content
-        padding-top: 30px
-        padding-bottom: 20px
+        padding: 30px 0 20px 0
         font-size: 36px
 
     .h2-content_preparation
