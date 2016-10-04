@@ -284,12 +284,15 @@
 }
 .jq-selectbox__dropdown {
 	box-sizing: border-box;
-	min-width: 200px;
-	margin: 2px 0 0;
+	min-width: 100% !important;
+	width: auto !important;
+	margin-top: 1px;
 	padding: 0;
 	border: 1px solid #eaeaea;
 	background: #FFF;
-	font: 14px/18px Arial, sans-serif;
+	position: absolute;
+	top: 100%;
+	left: 0;
 }
 .jq-selectbox__search {
 	margin: 5px;
@@ -338,11 +341,9 @@
 	border: none;
 }
 .jq-selectbox li.selected {
-	background-color: #A3ABB1;
-	color: #FFF;
 }
 .jq-selectbox li:hover {
-	background-color: #08C;
+	background-color: #004aad;
 	color: #FFF;
 }
 .jq-selectbox li.disabled {

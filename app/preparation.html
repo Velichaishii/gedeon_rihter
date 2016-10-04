@@ -5,6 +5,7 @@
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
     <title>Гедеон Рихтер</title>
     <link href="css/style.css" type="text/css" rel="stylesheet" >
+    <link href="css/jquery.formstyler.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -129,28 +130,20 @@
                         </ul>
                     </div>
                     <div class="search-b">
-                        <div class="search-b__dd search-b__dd_lang">
-                            <span>Ru <span class="triangle-blue"></span></span>
+                        <div class="search-b__dd_lang">
+                            <select title="lang">
+                                <option data-text="Ru">Русский</option>
+                                <option data-text="Kz">Қазақ</option>
+                                <option data-text="En">English</option>
+                            </select>
                         </div>
-                        <ul class="search-b__dd-list search-b__dd-list_lang">
-                            <li class="search-b__dd-item"><span class="dd-select">Русский</span></li>
-                            <li class="search-b__dd-item"><span class="dd-select">Қазақ</span></li>
-                            <li class="search-b__dd-item"><span class="dd-select">English</span></li>
-                        </ul>
                         <input class="search-b__entry-field" type="text" placeholder="Название и назначение" title="name">
-                        <div class="search-b__dd search-b__dd_category">
-                            <span>Категория<span class="triangle-blue"></span></span>
-                            <ul class="search-b__dd-list search-b__dd-list_category">
-                                <li class="search-b__dd-item">
-                                    <span class="dd-select">Название 1 категории</span>
-                                </li>
-                                <li class="search-b__dd-item">
-                                    <span class="dd-select">Название 2 категории</span>
-                                </li>
-                                <li class="search-b__dd-item">
-                                    <span class="dd-select">Название 3 категории</span>
-                                </li>
-                            </ul>
+                        <div class="search-b__dd_category">
+                            <select title="category">
+                                <option>Название 1 категории</option>
+                                <option>Название 2 категории</option>
+                                <option>Название 3 категории</option>
+                            </select>
                         </div>
                         <button class="btn-search">Поиск</button>
                     </div>
@@ -228,7 +221,7 @@
         </header>
         <section class="content-wrap content-wrap_sbp container mobile-page-start">
             <div class="content-left-b">
-                <h2 class="h2-content h2-content_preparation">Панангин</h2>
+                <h2 class="h2-content h2-content_tt-n">Панангин</h2>
                 <p class="content-text-medium content-text-medium_preparation text-dark-gray">Безрецептурный</p>
                 <div class="owl-carousel owl-theme owl-theme_content">
                     <div class="owl-carousel__seat">
@@ -430,19 +423,10 @@
             <img class="logo_blue" src="img/logo_blue.png">
         </div>
     </div>
-    <script src="js/jquery-3-1-0.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
-    <script>
-        $(".search-b__dd_lang").click(function(){
-            $(".search-b__dd-list_lang").toggleClass("visible");
-        });
-    </script>
-    <script>
-        $(".search-b__dd_category").click(function(){
-            $(".search-b__dd-list_category").toggleClass("visible");
-        });
-    </script>
+    <script src="js/jquery.formstyler.min.js"></script>
     <script>
         $(".btn-b__dd-btn-share-white").click(function(){
             $(".btn-b__dd-list").toggleClass("visible");
@@ -462,6 +446,18 @@
         $(".btn-cancel").click(function(){
             $(".drop-menu").toggleClass("invisible");
         });
+    </script>
+    <script>
+        $(".authoriz-b-dm__df-entry").click(function(){
+            $(".authoriz-b-dm__form").toggleClass("visible");
+        });
+    </script>
+    <script>
+        (function($) {
+            $(function() {
+                $('select').styler();
+            });
+        })(jQuery);
     </script>
 </body>
 

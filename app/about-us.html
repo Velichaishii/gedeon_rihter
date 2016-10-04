@@ -5,6 +5,7 @@
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
     <title>Гедеон Рихтер</title>
     <link href="css/style.css" type="text/css" rel="stylesheet" >
+    <link href="css/jquery.formstyler.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -129,28 +130,20 @@
                         </ul>
                     </div>
                     <div class="search-b">
-                        <div class="search-b__dd search-b__dd_lang">
-                            <span>Ru <span class="triangle-blue"></span></span>
+                        <div class="search-b__dd_lang">
+                            <select title="lang">
+                                <option data-text="Ru">Русский</option>
+                                <option data-text="Kz">Қазақ</option>
+                                <option data-text="En">English</option>
+                            </select>
                         </div>
-                        <ul class="search-b__dd-list search-b__dd-list_lang">
-                            <li class="search-b__dd-item"><span class="dd-select">Русский</span></li>
-                            <li class="search-b__dd-item"><span class="dd-select">Қазақ</span></li>
-                            <li class="search-b__dd-item"><span class="dd-select">English</span></li>
-                        </ul>
                         <input class="search-b__entry-field" type="text" placeholder="Название и назначение" title="name">
-                        <div class="search-b__dd search-b__dd_category">
-                            <span>Категория<span class="triangle-blue"></span></span>
-                            <ul class="search-b__dd-list search-b__dd-list_category">
-                                <li class="search-b__dd-item">
-                                    <span class="dd-select">Название 1 категории</span>
-                                </li>
-                                <li class="search-b__dd-item">
-                                    <span class="dd-select">Название 2 категории</span>
-                                </li>
-                                <li class="search-b__dd-item">
-                                    <span class="dd-select">Название 3 категории</span>
-                                </li>
-                            </ul>
+                        <div class="search-b__dd_category">
+                            <select title="category">
+                                <option>Название 1 категории</option>
+                                <option>Название 2 категории</option>
+                                <option>Название 3 категории</option>
+                            </select>
                         </div>
                         <button class="btn-search">Поиск</button>
                     </div>
@@ -237,13 +230,17 @@
         </section>
         <section class="bg-darker text-center">
             <div class="content-wrap container text-center">
-                <h2 class="h2-content line-blue">Миссия</h2>
+                <div class="h2-content-wrap">
+                    <h2 class="h2-content line-blue">Миссия</h2>
+                </div>
                 <p class="content-text-medium">Мы - этическая компания, с вековой историей и традициями,открытые к партнерству и готовые к позитивным переменам и инновациям. C гордостью представляем продукцию, отмеченную доверием, для активной и полноценной жизни, во имя развития и процветания соотечественников.</p>
                 </div>
         </section>
         <section class="text-center">
             <div class="content-wrap content-wrap_values-b container text-center">
-                <h2 class="h2-content line-blue">Ценности</h2>
+                <div class="h2-content-wrap">
+                    <h2 class="h2-content line-blue">Ценности</h2>
+                </div>
                 <ul class="values-b">
                     <li class="values-b__item">
                         <span class="circle-blue">
@@ -292,7 +289,9 @@
         </section>
         <section class="bg-darker text-center">
             <div class="content-wrap container text-center">
-                <h2 class="h2-content line-blue">Достижения</h2>
+                <div class="h2-content-wrap">
+                    <h2 class="h2-content line-blue">Достижения</h2>
+                </div>
                 <div class="achievements-b">
                     <ul class="achievements-b__list">
                         <li class="achievements-b__item">
@@ -338,13 +337,17 @@
         </section>
         <section class="text-center">
             <div class="content-wrap container text-center">
-                <h2 class="h2-content line-blue">Что впереди</h2>
+                <div class="h2-content-wrap">
+                    <h2 class="h2-content line-blue">Что впереди</h2>
+                </div>
                 <p class="content-text-medium content-text-medium_wla">Мы - в ТОР 3 по объемам продаж и представлены во всех направлениях фармацевтического бизнеса. Для удобства наших партнеров в Казахстане открыт ТОО "Гедеон Рихтер KZ". Мы первыми вводим на рынок РК инновационные препараты. В каждом областном центре РК имеется свой бизнес-юнит. Наша профессиональная команда, сохраняя традиции и опыт, использует самые современные IT-технологии. Наши партнеры и клиенты считают престижным работать с нами.</p>
             </div>
         </section>
         <section class="bg-darker">
             <div class="content-wrap container text-center">
-                <h2 class="h2-content line-blue">О компании</h2>
+                <div class="h2-content-wrap">
+                    <h2 class="h2-content line-blue">О компании</h2>
+                </div>
                 <div class="text-left">
                     <p class="content-text-small"><span class="text-medium">1901 год</span> - Гедеон Рихтер приобрел в Будапеште аптеку «Шаш» (Орел), при которой организовал фармацевтическую лабораторию
 
@@ -518,19 +521,10 @@
             <img class="logo_blue" src="img/logo_blue.png">
         </div>
     </div>
-    <script src="js/jquery-3-1-0.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
-    <script>
-        $(".search-b__dd_lang").click(function(){
-            $(".search-b__dd-list_lang").toggleClass("visible");
-        });
-    </script>
-    <script>
-        $(".search-b__dd_category").click(function(){
-            $(".search-b__dd-list_category").toggleClass("visible");
-        });
-    </script>
+    <script src="js/jquery.formstyler.min.js"></script>
     <script>
         $(".btn-b__dd-btn-share-white").click(function(){
             $(".btn-b__dd-list").toggleClass("visible");
@@ -550,6 +544,18 @@
         $(".btn-cancel").click(function(){
             $(".drop-menu").toggleClass("invisible");
         });
+    </script>
+    <script>
+        $(".authoriz-b-dm__df-entry").click(function(){
+            $(".authoriz-b-dm__form").toggleClass("visible");
+        });
+    </script>
+    <script>
+        (function($) {
+            $(function() {
+                $('select').styler();
+            });
+        })(jQuery);
     </script>
 </body>
 
