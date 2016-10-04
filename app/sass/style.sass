@@ -1,10 +1,1747 @@
 @import "compass/reset"
 @import reset
-//@import owl.carousel.css
-//@import mixins
-//$icons-spacing: 15px
-//@import fonts.css
+@import mixins
+@import fonts.css
+@import owl.carousel.css
+@import owl.theme.css
+@import owl.transitions.css
 
+.site-wrap
+    position: relative
 
-.header
-    background-color: #FCF
+.container
+    max-width: 1170px
+    padding: 0 15px
+    margin: auto
+
+.menu-header
+    display: block
+
+.menu-header__list-first-lvl
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    font-size: 19px
+    font-family: "Roboto-Medium"
+
+.menu-header__item-first-lvl
+    padding: 20px 0
+    display: flex
+    position: relative
+
+.menu-header__item-first-lvl
+    display: block
+
+    &:hover
+        color: #004aad
+
+        .menu-header__list-second-lvl
+            display: block
+
+.menu-header__list-second-lvl
+    min-width: 220px
+    max-width: 500px
+    background: #ffffff
+    display: none
+    position: absolute
+    top: 100%
+    left: 0
+    z-index: 30
+    border: 1px solid #eaeaea
+
+.menu-header__item-second-lvl
+    padding: 10px 20px
+    border-top: 1px solid #eaeaea
+    font-size: 19px
+
+    &:hover
+        color: #ffffff
+        background: #004aad
+
+    &:first-child
+        border-top: none
+
+.service-b
+    padding-top: 30px
+    padding-bottom: 30px
+    position: relative
+    text-align: center
+
+.logo-white-b
+    width: 211px
+    margin: 5px 20px 0 0
+    float: left
+
+.logo-white-link-emblem-small
+    width: 31px
+    height: 31px
+    margin-right: 10px
+    display: inline-block
+
+.logo-white-img-emblem-small
+    width: 31px
+    height: 31px
+    display: inline-block
+    font-size: 0
+
+.logo-white-link-text
+    width: 160px
+    height: 31px
+    display: inline-block
+
+.logo-white-img-text
+    width: 160px
+    height: 31px
+    display: inline-block
+    font-size: 0
+
+.logo-white-link-emblem-big
+    width: 41px
+    height: 39px
+    display: none
+
+.logo-white-img-emblem-big
+    width: 41px
+    height: 39px
+    display: block
+    font-size: 0
+
+.search-b
+    width: calc(100% - 463px)
+    padding: 0 321px 0 71px
+    display: inline-block
+    position: relative
+    text-align: left
+    font-size: 0
+
+.search-b__dd
+    padding: 12px 10px 11px 10px
+    display: inline-block
+    font-family: "Roboto-Regular"
+    background: #ffffff
+    font-size: 17px
+    position: relative
+    cursor: pointer
+
+.search-b__dd-list
+    margin-top: 1px
+    border: 1px solid #eaeaea
+    background: #ffffff
+    position: absolute
+    top: 100%
+    left: 0
+    z-index: 20
+    font-size: 19px
+
+.search-b__dd-list_lang
+    min-width: 200px
+    display: none
+
+.search-b__dd-list_category
+    min-width: 320px
+    display: none
+
+.search-b__dd-item
+    border-top: 1px solid #eaeaea
+
+    &:first-child
+        border-top: none
+
+.search-b__dd_lang
+    width: 70px
+    position: absolute
+    top: 0
+    left: 0
+
+.search-b__dd_category
+    width: 160px
+    position: absolute
+    top: 0
+    right: 161px
+    border-left: 1px solid #3c3d42
+
+.search-b__entry-field
+    width: 100%
+    padding: 9px 10px 8px 10px
+    background: #ffffff
+    color: #666666
+    font-family: "Roboto-Regular"
+    font-size: 17px
+
+.video-wrap
+    width: 100%
+    height: 640px
+    position: relative
+
+.video-top
+    width: 100%
+    height: 640px
+    background: url('../img/family-health.png') no-repeat top center fixed
+    background-size: cover
+    position: absolute
+    top: 0
+    left: 0
+    z-index: -10
+
+.video-top_au
+    width: 100%
+    height: 640px
+    background: url('../img/chemist.png') no-repeat top center fixed
+    background-size: cover
+    position: absolute
+    top: 0
+    left: 0
+    z-index: -10
+
+.banner-middle
+    width: 100%
+    height: 432px
+    background: url('../img/water.png') no-repeat top center fixed
+    background-size: cover
+
+.banner-bottom
+    width: 100%
+    height: 432px
+    background: url('../img/family-man.png') no-repeat top center fixed
+    background-size: cover
+
+.banner-dm
+    width: 100%
+    height: 158px
+    background: url('../img/chemist_small.jpg') no-repeat top center
+
+.banner-container
+    height: 100%
+    display: block
+    text-align: center
+
+    &::before
+        vertical-align: middle
+        display: inline-block
+        height: 100%
+        content: ""
+
+.banner-content
+    width: 98%
+    padding: 0 15px
+    display: inline-block
+    vertical-align: middle
+
+.banner-text
+    color: #FFFFFF
+    font-family: "Roboto-Medium"
+
+.banner-text_big
+    padding-bottom: 30px
+    font-family: "Roboto-Regular"
+    font-size: 60px
+
+.banner-text_medium
+    font-size: 36px
+
+.banner-text_small
+    padding-top: 60px
+    font-size: 28px
+
+.banner-text_dm
+    font-family: "Roboto-Regular"
+    font-size: 28px
+
+.owl-carousel-wrap
+    padding-top: 10px
+    padding-bottom: 80px
+
+    .owl-carousel__seat
+        font-size: 0
+
+.owl-carousel__content-b
+    padding-top: 10px
+
+.owl-carousel__left-b
+    width: 50%
+    padding-right: 15px
+    display: inline-block
+    vertical-align: top
+
+.owl-carousel__img-wrap
+    width: 100%
+    height: auto
+
+.owl-carousel__right-b
+    width: 50%
+    padding-left: 15px
+    display: inline-block
+    vertical-align: top
+
+.blue-b
+    padding: 40px 0 45px 0
+    font-size: 0
+
+.menu-footer
+    width: calc(100% - 260px)
+    display: inline-block
+    vertical-align: top
+
+.menu-footer__list
+    color: #FFFFFF
+    font-family: "Roboto-Regular"
+    font-size: 0
+
+.menu-footer__item
+    width: 33.33%
+    padding: 0 10px 10px 0
+    display: inline-block
+    vertical-align: top
+    font-size: 17px
+
+.menu-footer__link
+    &:hover
+        text-decoration: underline
+
+.social-b
+    width: 260px
+    display: inline-block
+    vertical-align: top
+    color: #FFFFFF
+    font-family: "Roboto-Regular"
+    font-size: 19px
+
+.social-b__icons
+    padding: 15px 0
+
+.social-b__ico-wrap
+    display: inline-block
+    margin-right: 18px
+
+    &:last-child
+        margin-right: 0
+
+.social-b__ico
+    vertical-align: middle
+
+.social-b__f
+    +sprite(f)
+
+.social-b__t
+    +sprite(t)
+
+.social-b__rss
+    +sprite(rss)
+
+.social-b__in
+    +sprite(in)
+
+.social-b__instagram
+    +sprite(instagram)
+
+.social-b__vk
+    +sprite(vk)
+
+.social-b__g-plus
+    +sprite(g-plus)
+
+.copyright-b-wrap
+    background: #303135
+
+.copyright-b
+    padding-top: 25px
+    padding-bottom: 25px
+    text-align: center
+    color: #888b97
+    font-family: "Roboto-Regular"
+    font-size: 17px
+
+.drop-menu
+    width: 375px
+    height: 100%
+    background: #ffffff
+    display: none
+    position: absolute
+    top: 0
+    right: 0
+    z-index: 40
+    overflow: auto
+    text-align: center
+    font-family: "Roboto-Regular"
+    font-size: 21px
+
+.authoriz-b-dm
+    padding: 25px 0
+
+.authoriz-b-dm__links
+    padding-bottom: 30px
+
+.authoriz-b-dm__link
+    &:hover
+        color: #004aad
+
+.authoriz-b-dm__form
+    display: none
+
+.drop-menu__item-first-lvl
+    border-top: 1px solid #eaeaea
+
+    &:last-child
+        border-bottom: 1px solid #eaeaea
+
+.drop-menu__link-first-lvl
+    padding: 16px 10px
+    display: block
+
+    &:hover
+        background: #004aad
+        color: #ffffff
+
+.logo_blue
+    margin-top: 25px
+
+.values-b
+    font-size: 0
+
+.values-b__item
+    width: 33.33%
+    margin-bottom: 60px
+    display: inline-block
+    font-family: "Roboto-Regular"
+    font-size: 19px
+
+.values-b__caption
+    padding-top: 30px
+
+.values-b__ico-small
+    opacity: 0
+
+.values-b__ico-heart-big
+    +sprite(heart_big, "abs_middle")
+
+.values-b__ico-shield-big
+    +sprite(shield_big, "abs_middle")
+
+.values-b__ico-star-big
+    +sprite(star_big, "abs_middle")
+
+.values-b__ico-arrows-int-big
+    +sprite(arrows-int_big, "abs_middle")
+
+.values-b__ico-arrow-up-big
+    +sprite(arrow-up_big, "abs_middle")
+
+.values-b__ico-plus-big
+    +sprite(plus_big, "abs_middle")
+
+.values-b__ico-heart-small
+    +sprite(heart_small, "abs_middle")
+
+.values-b__ico-shield-small
+    +sprite(shield_small, "abs_middle")
+
+.values-b__ico-star-small
+    +sprite(star_small, "abs_middle")
+
+.values-b__ico-arrows-int-small
+    +sprite(arrows-int_small, "abs_middle")
+
+.values-b__ico-arrow-up-small
+    +sprite(arrow-up_small, "abs_middle")
+
+.values-b__ico-plus-small
+    +sprite(plus_small, "abs_middle")
+
+.achievements-b__list
+    font-size: 0
+
+.achievements-b__item
+    width: 260px
+    height: 120px
+    margin-left: 1%
+    margin-right: 1%
+    margin-bottom: 40px
+    background: #ffffff
+    border: 1px solid #eaeaea
+    display: inline-block
+    text-align: left
+
+.achievements-b__ico-wrap
+    width: 100px
+    height: 100%
+    display: inline-block
+    position: relative
+
+.achievements-b__caption
+    width: calc(100% - 100px)
+    padding-top: 25px
+    display: inline-block
+    vertical-align: top
+    font-family: "Roboto-Regular"
+    font-size: 19px
+
+.achievements-b__number
+    padding-top: 10px
+    font-size: 36px
+
+.achievements-b__img
+    margin-top: 20px
+
+.achievements-b__ico-flag
+    +sprite(flag, "abs_middle")
+
+.achievements-b__ico-city
+    +sprite(city, "abs_middle")
+
+.achievements-b__ico-pills
+    +sprite(pills, "abs_middle")
+
+.achievements-b__ico-handshake
+    +sprite(handshake, "abs_middle")
+
+.tape-b__item
+    padding: 25px 0 10px 0
+    border-bottom: 1px solid #eaeaea
+
+    &:first-child
+        padding-top: 0
+
+    &:last-child
+        border-bottom: 0
+
+.tape-b__link-img
+    margin-bottom: 10px
+    display: block
+
+.tape-b__link
+    display: block
+
+.contacts-b-wrap
+    padding-top: 20px
+    padding-bottom: 80px
+    font-size: 0
+
+.contacts-b
+    width: 50%
+    display: inline-block
+    vertical-align: top
+    font-family: "Roboto-Regular"
+
+.contacts-b__list
+    width: 350px
+    font-size: 0
+
+.contacts-b__item
+    width: 40%
+    padding: 0 20px 20px 0
+    display: inline-block
+    vertical-align: top
+    font-size: 19px
+
+    &:nth-child(2n)
+        width: 60%
+        padding-right: 0
+
+.contacts-b__text-right
+    float: right
+    font-family: "Roboto-Medium"
+
+.feedback-b
+    width: 50%
+    padding-left: 10px
+    display: inline-block
+    vertical-align: top
+    font-family: "Roboto-Regular"
+    font-size: 21px
+
+.feedback-b__message
+    padding-bottom: 30px
+
+.location-b
+    font-size: 0
+
+.location-b__map-wrap
+    width: 50%
+    height: 400px
+    display: inline-block
+    float: left
+
+.location-b__photo-wrap
+    width: 50%
+    height: 400px
+    display: inline-block
+    overflow: hidden
+
+.location-b__photo
+    width: auto
+    height: 100%
+
+.contacts-b__ico-wrap
+    width: 20px
+    display: inline-block
+    vertical-align: middle
+    text-align: center
+
+.contacts-b__ico
+    vertical-align: middle
+
+.contacts-b__ico-address
+    +sprite(address)
+
+.contacts-b__ico-tel
+    +sprite(tel)
+
+.contacts-b__ico-fax
+    +sprite(fax)
+
+.contacts-b__ico-e-mail
+    +sprite(mail_small)
+
+.bg-gradient-blue
+    background: linear-gradient(to top, #00347a, #004aad, #00357b)
+
+.bg-darker
+    background: #f7f7f7
+
+.text-center
+    text-align: center
+
+.text-left
+    text-align: left
+
+.text-medium
+    font-family: "Roboto-Medium"
+
+.text-white
+    color: #ffffff
+
+.text-dark-gray
+    color: #666666
+
+.text-light-blue
+    color: #008dc5
+
+.content-wrap
+    padding-top: 30px
+    padding-bottom: 80px
+    font-size: 0
+
+.content-wrap_values-b
+    padding-bottom: 0
+
+.content-left-b
+    width: 65%
+    padding-right: 30px
+    display: inline-block
+    vertical-align: top
+
+.content-right-b
+    width: 30%
+    display: inline-block
+    vertical-align: top
+
+.h2-content
+    padding: 50px 0
+    display: inline-block
+    color: #004aad
+    text-transform: uppercase
+    font-family: "Roboto-Medium"
+    font-size: 44px
+
+.h2-content_contacts
+    display: block
+    text-align: center
+    text-transform: none
+
+.h2-content_news
+    padding-top: 25px
+    padding-bottom: 55px
+    display: block
+    text-transform: none
+
+.h2-content_preparation
+    padding: 20px 0 20px 0
+
+.h2-content_preparation
+    padding: 20px 0 15px 0
+    display: block
+    text-transform: none
+
+.h3-content
+    padding-bottom: 15px
+    line-height: 34px
+    font-family: "Roboto-Medium"
+    font-size: 28px
+
+.h4-content
+    line-height: 26px
+    font-family: "Roboto-Medium"
+    font-size: 23px
+
+.content-text-small
+    padding: 12px 0 12px 0
+    font-family: "Roboto-Regular"
+    font-size: 19px
+    line-height: 23px
+
+.content-text-medium
+    font-family: "Roboto-Regular"
+    font-size: 24px
+    line-height: 30px
+
+.content-text-medium_preparation
+    padding-bottom: 30px
+
+.content-text-medium_wla
+    max-width: 945px
+    margin: auto
+
+.line-blue
+    padding-left: 60px
+    padding-right: 60px
+    position: relative
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+    &::before
+        width: 30px
+        height: 5px
+        background: #004aad
+        position: absolute
+        left: 0
+        top: 50%
+        content: ""
+
+    &::after
+        width: 30px
+        height: 5px
+        background: #004aad
+        position: absolute
+        right: 0
+        top: 50%
+        content: ""
+
+.full-space-img
+    width: 100%
+    height: auto
+    font-size: 0
+
+.btn-b-bottom
+    margin: 8px 0 0 20px
+    float: right
+
+.btn-b-item
+    padding-right: 30px
+    display: inline-block
+    vertical-align: middle
+
+    &:last-child
+        padding-right: 0
+
+.btn-b__dd-btn
+    display: block
+    font-size: 0
+    cursor: pointer
+
+.btn-b__search
+    cursor: pointer
+    +sprite(search)
+
+.btn-b__volume
+    +sprite(volume)
+
+.btn-b__share-white
+    +sprite(share_white)
+
+.btn-b__burger
+    +sprite(burger)
+
+.btn-b__dd-list
+    width: 292px
+    padding: 20px 10px 5px 20px
+    background: #ffffff
+    border: 1px solid #eaeaea
+    box-shadow: 2px 2px 2px #666666
+    display: none
+    position: absolute
+    top: 100%
+    right: 15px
+    z-index: 10
+    text-align: left
+    font-family: "Roboto-Regular"
+    font-size: 0
+
+.btn-b__dd-item
+    width: 130px
+    padding-bottom: 15px
+    display: inline-block
+    font-size: 19px
+
+.btn-b__dd-link
+    display: inline-block
+
+    &:active
+        color: #004aad
+
+    &:active .btn-b__dd-ico
+        background: #005ad3
+
+.btn-b__dd-ico
+    width: 30px
+    height: 30px
+    padding: 5px
+    margin-right: 5px
+    display: inline-block
+    vertical-align: middle
+    background: #004aad
+    position: relative
+
+.btn-b__dd-t
+    +sprite(t, "abs_middle")
+
+.btn-b__dd-f
+    +sprite(f, "abs_middle")
+
+.btn-b__dd-p
+    +sprite(p, "abs_middle")
+
+.btn-b__dd-in
+    +sprite(in, "abs_middle")
+
+.btn-b__dd-g-plus
+    +sprite(g-plus_small, "abs_middle")
+
+.btn-b__dd-e-mail
+    +sprite(e-mail, "abs_middle")
+
+.btn-search
+    width: 160px
+    height: 40px
+    background: #0257c9
+    position: absolute
+    top: 0
+    right: 0
+    font-size: 17px
+    color: #FFFFFF
+    font-family: "Roboto-Medium"
+    outline: none
+
+    &:hover
+        background: #0066ef
+
+    &:active
+        background: #0046a5
+
+.btn
+    width: 190px
+    line-height: 36px
+    margin: 0 25px
+    display: inline-block
+    border: 2px solid #0257c9
+    -webkit-border-radius: 20px
+    -moz-border-radius: 20px
+    border-radius: 20px
+    text-align: center
+    font-family: "Roboto-Medium"
+    font-size: 19px
+    white-space: nowrap
+    cursor: pointer
+
+    &.btn_blue
+        color: #FFFFFF
+        background: #0257c9
+        outline: none
+
+        &:hover
+            background: #0066ef
+            border: 2px solid #0066ef
+
+        &:active
+            background: #0046a5
+            border: 2px solid #0046a5
+
+    &.btn_white
+        color: #004aad
+        background: #FFFFFF
+        border: 2px solid #004aad
+
+        &:hover
+            color: #FFFFFF
+            background: #0257c9
+            border: 2px solid #0257c9
+
+        &:active
+            background: #0046a5
+            border: 2px solid #0046a5
+
+.btn-authoriz
+    width: 280px
+    height: 40px
+    padding: 9px 10px 11px 10px
+    color: #FFFFFF
+    background: #0257c9
+    -webkit-border-radius: 5px
+    -moz-border-radius: 5px
+    border-radius: 5px
+    font-family: "Roboto-Medium"
+    font-size: 19px
+
+.btn-contacts
+    margin: 0
+    float: right
+
+.btn-a-wrap
+    padding-top: 15px
+
+.btn-cancel
+    width: 15px
+    height: 15px
+    display: block
+    position: absolute
+    top: 15px
+    left: 15px
+    font-size: 0
+    cursor: pointer
+
+.btn-cancel-ico-white
+    position: absolute
+    top: 0
+    left: 0
+    z-index: 10
+    +sprite(cancel_white)
+
+.btn-cancel-ico-blue
+    position: absolute
+    top: 0
+    left: 0
+    z-index: 0
+    +sprite(cancel_blue)
+
+.btn-b__dd-text
+    display: inline-block
+    vertical-align: middle
+
+.option-b
+    padding: 5px 0 5px 0
+    font-family: "Roboto-Regular"
+    font-size: 19px
+    color: #004aad
+
+.option-b__item
+    padding-bottom: 15px
+
+.option-b_preparation
+    padding-bottom: 20px
+
+.option-b__ico
+    margin-right: 10px
+    vertical-align: middle
+
+.option-b__ico-share-blue
+    +sprite(share_blue)
+
+.option-b__ico-mail-big
+    +sprite(mail_big)
+
+.option-b__ico-download
+    +sprite(download)
+
+.entry-field
+    padding: 9px 10px
+    margin-bottom: 20px
+    border: 1px solid #c1c1c1
+    -webkit-border-radius: 5px
+    -moz-border-radius: 5px
+    border-radius: 5px
+    color: #c1c1c1
+    font-family: "Roboto-Light"
+    font-size: 15px
+
+    &:hover
+        border: 1px solid #0257c9
+
+.entry-field_authoriz
+    width: 280px
+    height: 40px
+    margin: 0 auto 20px auto
+    display: block
+
+.entry-field__left
+    width: 47%
+    float: left
+
+.entry-field__right
+    width: 47%
+    float: right
+
+.entry-field_textarea
+    width: 100%
+    height: 120px
+    word-wrap: break-word
+
+.dd-select
+    padding: 10px 20px
+    display: block
+    color: #004aad
+    font-family: "Roboto-Regular"
+    cursor: pointer
+    &:hover
+        background: #004aad
+        color: #ffffff
+
+.triangle-blue
+    width: 0
+    height: 0
+    margin: 6px 0 0 5px
+    float: right
+    border-left: 6px solid transparent
+    border-right: 6px solid transparent
+    border-top: 8px solid #1055b2
+
+.circle-blue
+    width: 100px
+    height: 100px
+    display: inline-block
+    position: relative
+    background: #004aad
+    -webkit-border-radius: 50%
+    -moz-border-radius: 50%
+    border-radius: 50%
+
+.active
+    display: block
+
+.mobile-visible
+    display: none
+
+.visible
+    display: block
+
+.invisible
+    display: none
+
+@media screen and (max-width: 1110px)
+    .logo-white-b
+        width: 31px
+
+    .logo-white-link-text
+        display: none
+
+    .search-b
+        width: 70%
+
+@media screen and (max-width: 959px)
+    .container
+        padding-left: 25px
+        padding-right: 25px
+
+    .menu-header
+        display: none
+
+    .service-b
+        text-align: left
+
+    .logo-white-b
+        width: 211px
+        margin: 0 auto 20px auto
+        display: block
+        float: none
+
+    .logo-white-link-text
+        display: inline-block
+
+    .search-b
+        width: calc(100% - 109px)
+
+    .search-b__dd
+        padding: 10px 10px 10px 10px
+        font-size: 15px
+        position: relative
+        cursor: pointer
+
+    .search-b__dd-list
+        margin-top: 1px
+        border: 1px solid #eaeaea
+        background: #ffffff
+        position: absolute
+        top: 100%
+        left: 0
+        font-size: 15px
+
+    .search-b__dd-list_lang
+        min-width: 200px
+        max-width: 400px
+
+    .search-b__dd-list_category
+        min-width: 320px
+        max-width: 400px
+
+    .search-b__dd-item
+        font-size: 15px
+        border-top: 1px solid #eaeaea
+
+        &:first-child
+            border-top: none
+
+    .dd-select
+        padding: 8px 20px
+
+    .search-b__dd_lang
+        width: 70px
+        position: absolute
+        top: 0
+        left: 0
+
+    .search-b__dd_category
+        width: 160px
+        position: absolute
+        top: 0
+        right: 161px
+        border-left: 1px solid #3c3d42
+
+    .search-b__entry-field
+        width: 100%
+        padding: 8px 10px 7px 10px
+        background: #ffffff
+        color: #666666
+        font-family: "Roboto-Regular"
+        font-size: 15px
+
+    .video-wrap
+        height: 420px
+
+    .video-top
+        width: 100%
+        height: 420px
+
+    .banner-middle
+        width: 100%
+        height: 300px
+
+    .banner-bottom
+        width: 100%
+        height: 300px
+
+    .video-top_au
+        width: 100%
+        height: 420px
+
+    .banner-text_big
+        padding-bottom: 30px
+        font-size: 40px
+
+    .banner-text_medium
+        font-size: 24px
+
+    .banner-text_small
+        padding-top: 50px
+        font-size: 20px
+
+    .btn-b-bottom
+        margin-top: 4px
+        margin-left: 0
+
+    .blue-b
+        padding-top: 35px
+        padding-bottom: 30px
+
+    .menu-footer
+        width: 100%
+
+    .menu-footer__item
+        width: 37.5%
+        font-size: 15px
+
+        &:nth-child(3n)
+            width: 25%
+
+    .social-b
+        width: 100%
+        padding-top: 35px
+        display: block
+        text-align: center
+
+    .social-b__text
+        padding-right: 10px
+        display: inline-block
+        font-size: 17px
+
+    .social-b__icons
+        padding: 0
+        display: inline-block
+
+    .copyright-b
+        padding-top: 25px
+        padding-bottom: 25px
+        font-size: 15px
+        line-height: 20px
+
+    .content-wrap
+        padding-top: 10px
+        padding-bottom: 55px
+
+    .values-b__item
+        margin-bottom: 35px
+        font-size: 17px
+
+    .values-b__ico-big
+        opacity: 0
+
+    .values-b__ico-small
+        opacity: 1
+
+    .values-b__caption
+        padding-top: 20px
+
+    .achievements-b__item
+        margin-right: 10%
+        margin-left: 0
+
+        &:nth-child(2n)
+            margin-right: 0
+
+    .content-wrap_values-b
+        padding-bottom: 20px
+
+    .content-wrap_sbp
+        padding-bottom: 45px
+
+    .content-left-b
+        width: 100%
+        display: block
+        padding-right: 0
+
+    .content-right-b
+        width: 100%
+        display: block
+
+    .tape-b
+        border-top: 1px solid #eaeaea
+        font-size: 0
+
+    .tape-b__item
+        width: 47.5%
+        padding-top: 40px
+        padding-bottom: 0
+        margin-right: 5%
+        border: none
+        display: inline-block
+        vertical-align: top
+
+        &:first-child
+            padding-top: 40px
+
+        &:nth-child(2n)
+            margin-right: 0
+
+        &:nth-child(3n)
+            display: none
+
+    .tape-b__link-img
+        margin-bottom: 15px
+
+    .contacts-b-wrap
+        padding-top: 0
+        padding-bottom: 60px
+
+    .contacts-b
+        .contacts-b__list
+            .contacts-b__item
+                font-size: 15px
+
+    .feedback-b
+        .feedback-b__message
+            padding-bottom: 15px
+            font-size: 17px
+
+    .location-b__map-wrap
+        width: 100%
+        height: 300px
+        display: block
+        float: none
+
+    .location-b__photo-wrap
+        width: 100%
+        height: 300px
+        display: block
+        overflow: hidden
+
+    .location-b__photo
+        width: 100%
+        height: auto
+
+    .h2-content
+        padding-bottom: 30px
+        font-size: 36px
+
+    .h2-content_news
+        padding-top: 40px
+        padding-bottom: 40px
+
+    .h2-content_preparation
+        padding-top: 40px
+        padding-bottom: 20px
+
+    .h3-content
+        padding-bottom: 10px
+        font-size: 21px
+        line-height: 22px
+
+    .h4-content
+        font-size: 19px
+        line-height: 21px
+
+    .content-text-medium
+        font-size: 20px
+        line-height: 24px
+
+    .content-text-medium_preparation
+        padding-bottom: 35px
+
+    .content-text-small
+        padding-top: 10px
+        padding-bottom: 10px
+        font-size: 15px
+        line-height: 20px
+
+    .line-blue
+        &::before
+            width: 30px
+            height: 5px
+            background: #004aad
+            position: absolute
+            left: 0
+            top: 58%
+            content: ""
+
+        &::after
+            width: 30px
+            height: 5px
+            background: #004aad
+            position: absolute
+            right: 0
+            top: 58%
+            content: ""
+
+    .btn-b__dd-list
+        right: 25px
+
+    .btn-b__dd-item
+        font-size: 15px
+
+    .btn-b__dd-ico
+        margin-right: 10px
+
+    .btn-b-item
+        &:first-child
+            display: none
+
+    .btn-search
+        height: 35px
+
+    .btn
+        width: 180px
+        line-height: 31px
+        font-size: 17px
+
+    .btn-a-wrap
+        padding-top: 10px
+
+    .option-b
+        width: 100%
+        display: block
+        padding-top: 15px
+        padding-bottom: 15px
+
+    .option-b__item
+        padding-right: 40px
+        display: inline-block
+
+    .entry-field__left
+        width: 100%
+        padding: 7px 10px
+        float: none
+        display: block
+        font-size: 14px
+
+    .entry-field__right
+        width: 100%
+        padding: 7px 10px
+        float: none
+        display: block
+        font-size: 14px
+
+    .entry-field_textarea
+        height: 100px
+        padding: 7px 10px
+        font-size: 14px
+
+    .owl-carousel-wrap
+        padding-bottom: 60px
+
+    .owl-theme
+        margin-bottom: 30px
+        padding-bottom: 30px
+
+        .owl-controls
+            margin-top: 20px
+
+            .owl-page
+                span
+                    width: 15px
+                    height: 15px
+                    -webkit-border-radius: 15px
+                    -moz-border-radius: 15px
+                    border-radius: 15px
+                    margin: 5px 5px
+
+    .owl-theme_content
+        margin-bottom: 30px
+
+        .owl-controls
+            bottom: 10px
+
+            .owl-page
+                span
+                    width: 15px
+                    height: 15px
+                    -webkit-border-radius: 15px
+                    -moz-border-radius: 15px
+                    border-radius: 15px
+                    margin: 5px 5px
+
+    .triangle-blue
+        margin-top: 4px
+
+    .circle-blue
+        width: 80px
+        height: 80px
+
+@media screen and (max-width: 767px)
+    .header
+        width: 100%
+        position: absolute
+        top: 0
+        left: 0
+        z-index: 50
+
+    .container
+        padding-left: 20px
+        padding-right: 20px
+
+    .service-b
+        padding-top: 20px
+        padding-bottom: 20px
+        text-align: left
+
+    .logo-white-b
+        width: 41px
+        margin: 0
+        display: block
+        float: left
+
+    .logo-white-link-emblem-small
+        display: none
+
+    .logo-white-link-text
+        display: none
+
+    .logo-white-link-emblem-big
+        display: block
+
+    .search-b
+        width: 100%
+        padding: 20px 0 0 0
+        clear: both
+        display: none
+
+    .search-b__dd_lang
+        width: 63px
+        margin-right: 1px
+        position: static
+
+    .search-b__dd_category
+        width: 100%
+        position: static
+        border-top: 1px solid #3c3d42
+        border-left: none
+        right: 0
+
+    .search-b__entry-field
+        width: calc(100% - 64px)
+        position: static
+
+    .search-b__dd
+        padding: 11px 10px 9px 10px
+        display: inline-block
+        font-family: "Roboto-Regular"
+        background: #ffffff
+        font-size: 15px
+        position: relative
+        cursor: pointer
+
+    .search-b__dd-list
+        margin-top: 1px
+        background: #ffffff
+        position: absolute
+        left: 0
+        font-size: 15px
+
+    .search-b__dd-list_lang
+        width: 100%
+        max-width: 100%
+        top: 55px
+        display: none
+
+    .search-b__dd-list_category
+        width: 100%
+        max-width: 100%
+        display: none
+
+    .search-b__dd-item
+        border-top: 1px solid #eaeaea
+
+    .banner-text_big
+        padding-bottom: 30px
+        font-size: 36px
+
+    .banner-text_medium
+        font-size: 22px
+
+    .banner-text_small
+        padding-top: 50px
+        font-size: 18px
+
+    .owl-carousel-wrap
+        .owl-carousel__seat
+            .owl-carousel__left-b
+                width: 100%
+                padding-right: 0
+
+            .owl-carousel__right-b
+                width: 100%
+                padding-left: 0
+
+    .blue-b
+        padding-top: 40px
+        padding-bottom: 40px
+
+    .menu-footer
+        display: none
+
+    .social-b
+        padding-top: 0
+
+    .social-b__text
+        padding-right: 10px
+        display: block
+
+    .social-b__icons
+        padding-top: 20px
+        display: block
+
+    .copyright-b
+        padding: 20px 30px
+        font-size: 15px
+        line-height: 20px
+
+    .content-wrap
+        padding-top: 10px
+        padding-bottom: 40px
+
+    .values-b
+        padding-top: 15px
+
+    .values-b__item
+        width: 100%
+        display: block
+
+    .values-b__ico-big
+        opacity: 1
+
+    .values-b__ico-small
+        opacity: 0
+
+    .achievements-b__item
+        display: block
+        margin-right: auto
+        margin-left: auto
+
+        &:nth-child(2n)
+            margin-right: auto
+
+    .content-wrap_values-b
+        padding-bottom: 0
+
+    .content-wrap_sbp
+        padding-bottom: 30px
+
+    .option-b
+        padding-top: 20px
+        padding-bottom: 10px
+
+        .option-b__item
+            padding: 0 0 10px 0
+            display: block
+
+    .tape-b__item
+        width: 100%
+        display: block
+        padding-top: 30px
+        padding-bottom: 20px
+        border-bottom: 1px solid #eaeaea
+
+        &:first-child
+            padding-top: 30px
+
+        &:last-child
+            padding-bottom: 0
+
+    .contacts-b-wrap
+        padding-top: 10px
+        padding-bottom: 40px
+
+    .contacts-b
+        width: 100%
+        padding-bottom: 10px
+        display: block
+
+    .contacts-b__list
+        width: 280px
+        margin: auto
+
+    .feedback-b
+        width: 100%
+        padding-left: 0
+        display: block
+
+    .location-b__photo-wrap
+        width: 100%
+        height: auto
+
+    .drop-menu
+        width: 100%
+        top: 79px
+        overflow: auto
+
+    .banner-dm
+        display: none
+
+    .authoriz-b-dm
+        padding-top: 30px
+
+    .h2-content
+        padding-top: 30px
+        padding-bottom: 20px
+        font-size: 36px
+
+    .h2-content_preparation
+        padding-bottom: 15px
+
+    .h2-content_news
+        padding: 30px 0 30px 0
+
+    .h3-content
+        padding-top: 20px
+        padding-bottom: 5px
+        font-size: 21px
+        line-height: 22px
+
+    .content-text-medium
+        font-size: 18px
+        line-height: 22px
+
+    .content-text-small
+        padding-top: 10px
+        padding-bottom: 10px
+        font-size: 15px
+        line-height: 20px
+
+    .content-text-medium_preparation
+        padding-bottom: 25px
+
+    .line-blue
+        &::before
+            display: none
+
+        &::after
+            display: none
+
+    .btn-b-bottom
+        display: none
+
+    .btn-b__dd-list
+        left: 50%
+        margin-left: -145px
+
+    .btn-b__dd-item
+        font-size: 15px
+
+    .btn-b__dd-ico
+        margin-right: 10px
+
+    .btn-b-item
+        &:first-child
+            display: inline-block
+
+    .btn-b-top
+        margin-top: 8px
+        display: block
+        float: right
+
+    .btn-search
+        width: 100%
+        display: block
+        position: static
+
+    .btn-contacts
+        margin: auto
+        display: block
+        float: none
+
+    .btn-cancel-ico-white
+        z-index: 0
+
+    .btn-cancel-ico-blue
+        z-index: 10
+
+    .owl-carousel-wrap
+        padding-bottom: 40px
+
+    .owl-carousel-wrap_preparations
+        padding-bottom: 10px
+
+    .owl-theme
+        padding-bottom: 0
+
+        .owl-controls
+            margin-top: 10px
+
+            .owl-page
+                span
+                    width: 15px
+                    height: 15px
+                    -webkit-border-radius: 15px
+                    -moz-border-radius: 15px
+                    border-radius: 15px
+                    margin: 5px 5px
+
+    .owl-theme_content
+        margin-bottom: 25px
+
+        .owl-controls
+            .owl-page
+                span
+                    display: none
+
+    .circle-blue
+        width: 100px
+        height: 100px
+
+    .mobile-page-start
+        padding-top: 89px
+
+    .mobile-invisible
+        display: none
+
+    .visible
+        display: block
+
+    .invisible
+        display: none
