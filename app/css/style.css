@@ -609,7 +609,6 @@ a, img, a:active, a:focus { outline: none; }
   .social-b__icons { padding-top: 20px; display: block; }
   .copyright-b { padding: 20px 30px; font-size: 15px; line-height: 20px; }
   .content-wrap { padding-top: 40px; padding-bottom: 40px; }
-  .values-b { padding-top: 15px; }
   .values-b__item { width: 100%; display: block; }
   .values-b__ico-big { opacity: 1; }
   .values-b__ico-small { opacity: 0; }
