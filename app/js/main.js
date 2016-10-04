@@ -16,10 +16,6 @@ $(document).ready(function() {
       // itemsMobile : false
  
   });
- 
-});
-
-$(document).ready(function(){
 
     $(".btn-b__dd-btn-share-white").click(function(){
         $(".btn-b__dd-list").toggleClass("visible");
@@ -45,5 +41,5 @@ $(document).ready(function(){
     if ($("select").length > 0) {
         $('select').styler();
     }
-
+ 
 });
