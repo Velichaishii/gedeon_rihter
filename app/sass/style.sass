@@ -17,6 +17,8 @@
 
 .menu-header
     display: block
+    position: relative
+    z-index: 105
 
 .menu-header__list-first-lvl
     display: flex
@@ -26,9 +28,12 @@
     font-family: "Roboto-Medium"
 
 .menu-header__item-first-lvl
-    padding: 20px 0
     display: flex
     position: relative
+
+.menu-header__link-first-lvl
+    padding: 20px 0
+    display: block
 
 .menu-header__item-first-lvl
     display: block
@@ -242,10 +247,11 @@
 
 .owl-carousel__img-wrap
     width: 100%
-    overflow: hidden
+    display: block
 
     &:hover > img
         transform: scale(1.1)
+        overflow: hidden
 
 .owl-carousel__right-b
     width: 50%
