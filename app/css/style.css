@@ -134,7 +134,7 @@ a, img, a:active, a:focus { outline: none; }
 
 .owl-carousel__left-b { width: 50%; padding-right: 15px; display: inline-block; vertical-align: top; }
 
-.owl-carousel__img-wrap { width: 100%; display: block; }
+.owl-carousel__img-wrap { width: 100%; height: auto; display: block; }
 .owl-carousel__img-wrap:hover > img { transform: scale(1.1); overflow: hidden; }
 
 .owl-carousel__right-b { width: 50%; padding-left: 15px; display: inline-block; vertical-align: top; }
