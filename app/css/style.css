@@ -586,8 +586,8 @@ a, img, a:active, a:focus { outline: none; }
   .content-text-small { margin-top: 10px; margin-bottom: 10px; font-size: 15px; line-height: 20px; }
   .content-text-small_tape { margin-bottom: 0; }
   .content_news-prep { padding-top: 35px; padding-bottom: 30px; }
-  .line-blue::before { width: 30px; height: 5px; background: #004aad; position: absolute; left: 0; top: 58%; content: ""; }
-  .line-blue::after { width: 30px; height: 5px; background: #004aad; position: absolute; right: 0; top: 58%; content: ""; }
+  .line-blue::before { width: 30px; height: 5px; background: #004aad; position: absolute; left: 0; top: 50%; content: ""; }
+  .line-blue::after { width: 30px; height: 5px; background: #004aad; position: absolute; right: 0; top: 50%; content: ""; }
   .btn-b__dd-list { right: 25px; }
   .btn-b__dd-item { font-size: 15px; }
   .btn-b__dd-ico { margin-right: 10px; }
@@ -663,6 +663,7 @@ a, img, a:active, a:focus { outline: none; }
   .content-text-medium_preparation { margin-bottom: 25px; }
   .content_news-prep { padding-bottom: 30px; }
   .content-left-b { padding-top: 40px; }
+  .line-blue { padding-left: 0; padding-right: 0; }
   .line-blue::before { display: none; }
   .line-blue::after { display: none; }
   .btn-b-bottom { display: none; }
