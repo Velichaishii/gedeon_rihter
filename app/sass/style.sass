@@ -247,12 +247,13 @@
 
 .owl-carousel__img-wrap
     width: 100%
-    height: auto
+    overflow: hidden
     display: block
+    font-size: 0
 
-    &:hover > img
+.owl-carousel__content-b:hover
+    .full-space-img
         transform: scale(1.1)
-        overflow: hidden
 
 .owl-carousel__right-b
     width: 50%
@@ -755,7 +756,7 @@
 .full-space-img
     width: 100%
     height: auto
-    font-size: 0
+    +trans()
 
 .btn-b-bottom
     margin: 8px 0 0 20px
