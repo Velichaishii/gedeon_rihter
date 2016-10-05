@@ -9,6 +9,7 @@
 .site-wrap
     position: relative
     overflow: hidden
+    color: #333
 
 .container
     max-width: 1170px
@@ -681,6 +682,7 @@
     line-height: 36px
 
 .h4-content
+    margin-bottom: 10px
     font-family: "Roboto-Medium"
     font-size: 23px
     line-height: 26px
@@ -700,7 +702,7 @@
     margin-bottom: 15px
 
 .content-text-small
-    margin: 12px 0 12px 0
+    margin-bottom: 20px
     font-family: "Roboto-Regular"
     font-size: 19px
     line-height: 23px
@@ -709,9 +711,6 @@
     padding-top: 30px
 
 .content
-    .content-text-small:first-child
-        margin-top: 0
-
     .content-text-small:last-child
         margin-bottom: 0
 
@@ -995,9 +994,10 @@
     -webkit-border-radius: 5px
     -moz-border-radius: 5px
     border-radius: 5px
-    color: #c1c1c1
+    color: #666
     font-family: "Roboto-Light"
     font-size: 15px
+    +phc(#666)
 
     &:hover
         border: 1px solid #0257c9
@@ -1336,8 +1336,7 @@
         margin-bottom: 40px
 
     .content-text-small
-        margin-top: 10px
-        margin-bottom: 10px
+        margin-bottom: 20px
         font-size: 15px
         line-height: 20px
 
@@ -1597,9 +1596,16 @@
         display: block
         margin-right: auto
         margin-left: auto
+        margin-bottom: 30px
 
         &:nth-child(2n)
             margin-right: auto
+
+        &:last-child
+            margin-bottom: 0
+
+    .achievements-b__img
+        display: none
 
     .content-wrap_values-b
         padding-bottom: 0
@@ -1657,6 +1663,9 @@
     .authoriz-b-dm
         padding-top: 30px
 
+    .h2-content
+        font-size: 30px
+
     .h2-content-wrap
         margin-bottom: 30px
 
@@ -1674,8 +1683,7 @@
         line-height: 22px
 
     .content-text-small
-        margin-top: 10px
-        margin-bottom: 10px
+        margin-bottom: 20px
         font-size: 15px
         line-height: 20px
 
