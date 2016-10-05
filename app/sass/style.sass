@@ -56,16 +56,19 @@
     border: 1px solid #eaeaea
 
 .menu-header__item-second-lvl
-    padding: 10px 20px
     border-top: 1px solid #eaeaea
     font-size: 19px
+
+    &:first-child
+        border-top: none
+
+.menu-header__link-second-lvl
+    padding: 10px 20px
+    display: block
 
     &:hover
         color: #ffffff
         background: #004aad
-
-    &:first-child
-        border-top: none
 
 .service-b
     padding-top: 30px
@@ -251,7 +254,7 @@
     display: block
     font-size: 0
 
-.owl-carousel__content-b:hover
+.owl-carousel__img-wrap:hover
     .full-space-img
         transform: scale(1.1)
 
@@ -862,7 +865,7 @@
         background: #0066ef
 
     &:active
-        background: #0046a5
+        background: #004baf
 
 .btn
     width: 190px
@@ -889,8 +892,8 @@
             border: 2px solid #0066ef
 
         &:active
-            background: #0046a5
-            border: 2px solid #0046a5
+            background: #004baf
+            border: 2px solid #004baf
 
     &.btn_white
         color: #004aad
@@ -903,8 +906,8 @@
             border: 2px solid #0257c9
 
         &:active
-            background: #0046a5
-            border: 2px solid #0046a5
+            background: #004baf
+            border: 2px solid #004baf
 
 .btn-authoriz
     width: 280px
@@ -917,6 +920,12 @@
     border-radius: 5px
     font-family: "Roboto-Medium"
     font-size: 19px
+
+    &:hover
+        background: #0066ef
+
+    &:active
+        background: #004baf
 
 .btn-contacts
     margin: 0

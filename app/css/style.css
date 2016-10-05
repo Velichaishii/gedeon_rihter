@@ -56,11 +56,13 @@ a, img, a:active, a:focus { outline: none; }
 
 .container { max-width: 1170px; padding: 0 15px; margin: auto; }
 
-.menu-header { display: block; }
+.menu-header { display: block; position: relative; z-index: 105; }
 
 .menu-header__list-first-lvl { display: flex; flex-wrap: wrap; justify-content: space-between; font-size: 19px; font-family: "Roboto-Medium"; }
 
-.menu-header__item-first-lvl { padding: 20px 0; display: flex; position: relative; }
+.menu-header__item-first-lvl { display: flex; position: relative; }
+
+.menu-header__link-first-lvl { padding: 20px 0; display: block; }
 
 .menu-header__item-first-lvl { display: block; }
 .menu-header__item-first-lvl:hover { color: #004aad; }
@@ -68,9 +70,11 @@ a, img, a:active, a:focus { outline: none; }
 
 .menu-header__list-second-lvl { min-width: 220px; max-width: 500px; background: #ffffff; display: none; position: absolute; top: 100%; left: 0; z-index: 30; border: 1px solid #eaeaea; }
 
-.menu-header__item-second-lvl { padding: 10px 20px; border-top: 1px solid #eaeaea; font-size: 19px; }
-.menu-header__item-second-lvl:hover { color: #ffffff; background: #004aad; }
+.menu-header__item-second-lvl { border-top: 1px solid #eaeaea; font-size: 19px; }
 .menu-header__item-second-lvl:first-child { border-top: none; }
+
+.menu-header__link-second-lvl { padding: 10px 20px; display: block; }
+.menu-header__link-second-lvl:hover { color: #ffffff; background: #004aad; }
 
 .service-b { padding-top: 30px; padding-bottom: 30px; position: relative; text-align: center; }
 
@@ -132,8 +136,9 @@ a, img, a:active, a:focus { outline: none; }
 
 .owl-carousel__left-b { width: 50%; padding-right: 15px; display: inline-block; vertical-align: top; }
 
-.owl-carousel__img-wrap { width: 100%; overflow: hidden; }
-.owl-carousel__img-wrap:hover > img { transform: scale(1.1); }
+.owl-carousel__img-wrap { width: 100%; overflow: hidden; display: block; font-size: 0; }
+
+.owl-carousel__img-wrap:hover .full-space-img { transform: scale(1.1); }
 
 .owl-carousel__right-b { width: 50%; padding-left: 15px; display: inline-block; vertical-align: top; }
 
@@ -388,7 +393,7 @@ a, img, a:active, a:focus { outline: none; }
 .line-blue::before { width: 30px; height: 5px; background: #004aad; position: absolute; left: 0; top: 50%; content: ""; }
 .line-blue::after { width: 30px; height: 5px; background: #004aad; position: absolute; right: 0; top: 50%; content: ""; }
 
-.full-space-img { width: 100%; height: auto; font-size: 0; }
+.full-space-img { width: 100%; height: auto; -webkit-transition: all 0.5s ease 0s; -moz-transition: all 0.5s ease 0s; -o-transition: all 0.5s ease 0s; transition: all 0.5s ease 0s; }
 
 .btn-b-bottom { margin: 8px 0 0 20px; float: right; }
 
@@ -439,17 +444,19 @@ a, img, a:active, a:focus { outline: none; }
 
 .btn-search { width: 160px; height: 40px; background: #0257c9; position: absolute; top: 0; right: 0; font-size: 17px; color: #FFFFFF; font-family: "Roboto-Medium"; outline: none; }
 .btn-search:hover { background: #0066ef; }
-.btn-search:active { background: #0046a5; }
+.btn-search:active { background: #004baf; }
 
 .btn { width: 190px; line-height: 36px; margin: 0 25px; display: inline-block; border: 2px solid #0257c9; -webkit-border-radius: 20px; -moz-border-radius: 20px; border-radius: 20px; text-align: center; font-family: "Roboto-Medium"; font-size: 19px; white-space: nowrap; cursor: pointer; }
 .btn.btn_blue { color: #FFFFFF; background: #0257c9; outline: none; }
 .btn.btn_blue:hover { background: #0066ef; border: 2px solid #0066ef; }
-.btn.btn_blue:active { background: #0046a5; border: 2px solid #0046a5; }
+.btn.btn_blue:active { background: #004baf; border: 2px solid #004baf; }
 .btn.btn_white { color: #004aad; background: #FFFFFF; border: 2px solid #004aad; }
 .btn.btn_white:hover { color: #FFFFFF; background: #0257c9; border: 2px solid #0257c9; }
-.btn.btn_white:active { background: #0046a5; border: 2px solid #0046a5; }
+.btn.btn_white:active { background: #004baf; border: 2px solid #004baf; }
 
 .btn-authoriz { width: 280px; height: 40px; padding: 9px 10px 11px 10px; color: #FFFFFF; background: #0257c9; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; font-family: "Roboto-Medium"; font-size: 19px; }
+.btn-authoriz:hover { background: #0066ef; }
+.btn-authoriz:active { background: #004baf; }
 
 .btn-contacts { margin: 0; float: right; }
 
