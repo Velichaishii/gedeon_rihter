@@ -11,8 +11,9 @@
 }
 
 .owl-theme_content{
-	margin-bottom: 12px;
+	margin-bottom: 0px;
 	position: relative;
+	display: inline-block;
 }
 
 .owl-theme_content .owl-controls{

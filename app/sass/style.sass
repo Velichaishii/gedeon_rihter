@@ -494,7 +494,7 @@
     +sprite(handshake, "abs_middle")
 
 .tape-b__item
-    padding: 25px 0 10px 0
+    padding: 25px 0 25px 0
     border-bottom: 1px solid #eaeaea
 
     &:first-child
@@ -511,7 +511,7 @@
     display: block
 
 .contacts-wrap
-    padding-top: 20px
+    padding-top: 70px
     padding-bottom: 80px
 
 .contacts-b-wrap
@@ -633,7 +633,10 @@
     font-size: 0
 
 .content-wrap_values-b
-    padding-bottom: 0
+    padding-bottom: 20px
+
+.content-wrap_news-prep
+    padding-top: 35px
 
 .content-left-b
     width: 68%
@@ -671,11 +674,35 @@
 .h2-content-wrap
     margin-bottom: 60px
 
+.h2-content-wrap_contacts
+    margin-bottom: 50px
+
+.h2-content-wrap_news
+    margin-top: 25px
+    margin-bottom: 60px
+
+.h2-content-wrap_preparations
+    margin-top: 10px
+    margin-bottom: 15px
+
 .content-text-small
     margin: 12px 0 12px 0
     font-family: "Roboto-Regular"
     font-size: 19px
     line-height: 23px
+
+.content_news-prep
+    padding-top: 30px
+
+.content
+    .content-text-small:first-child
+        margin-top: 0
+
+    .content-text-small:last-child
+        margin-bottom: 0
+
+.content-text-small_tape
+    margin-bottom: 0
 
 .content-text-medium
     font-family: "Roboto-Regular"
@@ -916,16 +943,13 @@
     vertical-align: middle
 
 .option-b
-    padding: 5px 0 5px 0
+    padding-bottom: 15px
     font-family: "Roboto-Regular"
     font-size: 19px
     color: #004aad
 
 .option-b__item
-    padding-bottom: 15px
-
-.option-b_preparation
-    padding-bottom: 20px
+    margin-bottom: 15px
 
 .option-b__ico
     margin-right: 10px
@@ -939,6 +963,10 @@
 
 .option-b__ico-download
     +sprite(download)
+
+.option-b__link
+    &:hover
+        text-decoration: underline
 
 .entry-field
     padding: 9px 10px
@@ -970,6 +998,7 @@
 
 .entry-field_textarea
     width: 100%
+    max-width: 100%
     height: 120px
     word-wrap: break-word
 
@@ -1165,6 +1194,10 @@
         padding-top: 60px
         padding-bottom: 60px
 
+    .content-wrap_news-prep
+        padding-top: 50px
+        padding-bottom: 55px
+
     .values-b__item
         margin-bottom: 35px
         font-size: 17px
@@ -1187,9 +1220,6 @@
 
     .content-wrap_values-b
         padding-bottom: 20px
-
-    .content-wrap_sbp
-        padding-bottom: 45px
 
     .content-left-b
         width: 100%
@@ -1226,7 +1256,7 @@
         margin-bottom: 15px
 
     .contacts-wrap
-        padding-top: 0
+        padding-top: 50px
         padding-bottom: 60px
 
     .contacts-b__item
@@ -1267,18 +1297,36 @@
     .h2-content-wrap
         margin-bottom: 40px
 
+    .h2-content-wrap_news
+        margin-top: 0
+        margin-bottom: 40px
+
+    .h2-content-wrap_preparations
+        margin-top: 0
+        margin-bottom: 15px
+
+    .h2-content-wrap_contacts
+        margin-bottom: 30px
+
     .content-text-medium
         font-size: 20px
         line-height: 24px
 
     .content-text-medium_preparation
-        margin-bottom: 35px
+        margin-bottom: 40px
 
     .content-text-small
         margin-top: 10px
         margin-bottom: 10px
         font-size: 15px
         line-height: 20px
+
+    .content-text-small_tape
+        margin-bottom: 0
+
+    .content_news-prep
+        padding-top: 35px
+        padding-bottom: 30px
 
     .line-blue
         &::before
@@ -1325,9 +1373,8 @@
 
     .option-b
         width: 100%
-        display: block
-        padding-top: 15px
         padding-bottom: 15px
+        display: block
 
     .option-b__item
         padding-right: 40px
@@ -1357,9 +1404,6 @@
         padding-bottom: 60px
 
     .owl-theme
-        margin-bottom: 30px
-        padding-bottom: 30px
-
         .owl-controls
             margin-top: 20px
 
@@ -1373,8 +1417,6 @@
                     margin: 5px 5px
 
     .owl-theme_content
-        margin-bottom: 30px
-
         .owl-controls
             bottom: 10px
 
@@ -1524,7 +1566,6 @@
 
     .values-b__item
         width: 100%
-        display: block
 
     .values-b__ico-big
         opacity: 1
@@ -1543,16 +1584,9 @@
     .content-wrap_values-b
         padding-bottom: 0
 
-    .content-wrap_sbp
-        padding-bottom: 30px
-
-    .option-b
-        padding-top: 20px
-        padding-bottom: 10px
-
-        .option-b__item
-            padding: 0 0 10px 0
-            display: block
+    .option-b__item
+        margin: 0 0 10px 0
+        display: block
 
     .tape-b__item
         width: 100%
@@ -1568,7 +1602,7 @@
             padding-bottom: 0
 
     .contacts-wrap
-        padding-top: 10px
+        padding-top: 40px
         padding-bottom: 40px
 
     .contacts-b
@@ -1584,6 +1618,9 @@
         width: 100%
         padding-left: 0
         display: block
+
+    .entry-field_textarea
+        max-width: 100%
 
     .location-b__photo-wrap
         width: 100%
@@ -1603,6 +1640,12 @@
     .h2-content-wrap
         margin-bottom: 30px
 
+    .h2-content-wrap_contacts
+        margin-bottom: 25px
+
+    .h2-content-wrap_news
+        margin-bottom: 30px
+
     .content-text-medium
         font-size: 18px
         line-height: 22px
@@ -1614,7 +1657,13 @@
         line-height: 20px
 
     .content-text-medium_preparation
-        padding-bottom: 25px
+        margin-bottom: 25px
+
+    .content_news-prep
+        padding-bottom: 30px
+
+    .content-left-b
+        padding-top: 40px
 
     .line-blue
         &::before
@@ -1683,8 +1732,6 @@
                     margin: 5px 5px
 
     .owl-theme_content
-        margin-bottom: 25px
-
         .owl-controls
             .owl-page
                 span
@@ -1695,7 +1742,7 @@
         height: 100px
 
     .mobile-page-start
-        padding-top: 89px
+        padding-top: 79px
 
     .mobile-invisible
         display: none

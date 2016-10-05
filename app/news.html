@@ -10,6 +10,7 @@
 
 <body>
     <div class="site-wrap">
+        <div class="site-wrap__overlay"></div>
         <header class="header">
             <nav class="menu-header container">
                 <ul class="menu-header__list-first-lvl">
@@ -140,9 +141,9 @@
                         <input class="search-b__entry-field" type="text" placeholder="Название и назначение" title="Название и назначение">
                         <div class="search-b__dd_category">
                             <select title="Категория">
-                                <option>Название 1 категории</option>
-                                <option>Название 2 категории</option>
-                                <option>Название 3 категории</option>
+                                <option data-text="Категория">Название 1 категории</option>
+                                <option data-text="Категория 2">Название 2 категории</option>
+                                <option data-text="Категория 3">Название 3 категории</option>
                             </select>
                         </div>
                         <button class="btn-search">Поиск</button>
@@ -219,9 +220,11 @@
                 </div>
             </div>
         </header>
-        <section class="content-wrap content-wrap_sbp container mobile-page-start">
+        <section class="content-wrap content-wrap_news-prep container mobile-page-start">
             <div class="content-left-b">
-                <h2 class="h2-content h2-content_tt-n">Заголовок новости</h2>
+                <div class="h2-content-wrap_news">
+                    <h2 class="h2-content h2-content_tt-n">Заголовок новости</h2>
+                </div>
                 <div class="owl-carousel owl-theme owl-theme_content">
                     <div class="owl-carousel__seat">
                         <img class="full-space-img" src="img/laboratory.jpg">
@@ -230,12 +233,14 @@
                         <img class="owl-carousel__ full-space-img" src="img/laboratory.jpg">
                     </div>
                 </div>
-                <p class="content-text-small">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.</p>
-                <p class="content-text-small">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.</p>
-                <p class="content-text-small">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.</p>
-                <p class="content-text-small">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.</p>
-                <p class="content-text-small">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.</p>
-                <p class="content-text-small">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.</p>
+                <div class="content content_news-prep">
+                    <p class="content-text-small">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.</p>
+                    <p class="content-text-small">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.</p>
+                    <p class="content-text-small">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.</p>
+                    <p class="content-text-small">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.</p>
+                    <p class="content-text-small">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.</p>
+                    <p class="content-text-small">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.</p>
+                </div>
             </div>
             <div class="content-right-b">
                 <ul class="option-b">
@@ -422,42 +427,10 @@
             <img class="logo_blue" src="img/logo_blue.png">
         </div>
     </div>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/jquery.min.1.11.1.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/jquery.formstyler.min.js"></script>
-    <script>
-        $(".btn-b__dd-btn-share-white").click(function(){
-            $(".btn-b__dd-list").toggleClass("visible");
-        });
-    </script>
-    <script>
-        $(".btn-b__dd-btn-drop-menu").click(function(){
-            $(".drop-menu").toggleClass("visible");
-        });
-    </script>
-    <script>
-        $(".btn-b__dd-btn-search").click(function(){
-            $(".search-b").toggleClass("visible");
-        });
-    </script>
-    <script>
-        $(".btn-cancel").click(function(){
-            $(".drop-menu").toggleClass("invisible");
-        });
-    </script>
-    <script>
-        $(".authoriz-b-dm__df-entry").click(function(){
-            $(".authoriz-b-dm__form").toggleClass("visible");
-        });
-    </script>
-    <script>
-        (function($) {
-            $(function() {
-                $('select').styler();
-            });
-        })(jQuery);
-    </script>
 </body>
 
 </html>

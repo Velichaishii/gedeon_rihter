@@ -10,6 +10,7 @@
 
 <body>
     <div class="site-wrap">
+        <div class="site-wrap__overlay"></div>
         <header class="header">
             <nav class="menu-header container">
                 <ul class="menu-header__list-first-lvl">
@@ -140,9 +141,9 @@
                         <input class="search-b__entry-field" type="text" placeholder="Название и назначение" title="Название и назначение">
                         <div class="search-b__dd_category">
                             <select title="Категория">
-                                <option>Название 1 категории</option>
-                                <option>Название 2 категории</option>
-                                <option>Название 3 категории</option>
+                                <option data-text="Категория">Название 1 категории</option>
+                                <option data-text="Категория 2">Название 2 категории</option>
+                                <option data-text="Категория 3">Название 3 категории</option>
                             </select>
                         </div>
                         <button class="btn-search">Поиск</button>
@@ -219,9 +220,9 @@
                 </div>
             </div>
         </header>
-        <section class="contacts-wrap mobile-page-start">
-            <div class="container">
-                <div class="text-center">
+        <section class="mobile-page-start">
+            <div class="contacts-wrap container">
+                <div class="h2-content-wrap_contacts text-center">
                     <h2 class="h2-content h2-content_tt-n">Контакты</h2>
                 </div>
                 <div class="contacts-b-wrap">
@@ -431,42 +432,10 @@
             <img class="logo_blue" src="img/logo_blue.png">
         </div>
     </div>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/jquery.min.1.11.1.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/jquery.formstyler.min.js"></script>
-    <script>
-        $(".btn-b__dd-btn-share-white").click(function(){
-            $(".btn-b__dd-list").toggleClass("visible");
-        });
-    </script>
-    <script>
-        $(".btn-b__dd-btn-drop-menu").click(function(){
-            $(".drop-menu").toggleClass("visible");
-        });
-    </script>
-    <script>
-        $(".btn-b__dd-btn-search").click(function(){
-            $(".search-b").toggleClass("visible");
-        });
-    </script>
-    <script>
-        $(".btn-cancel").click(function(){
-            $(".drop-menu").toggleClass("invisible");
-        });
-    </script>
-    <script>
-        $(".authoriz-b-dm__df-entry").click(function(){
-            $(".authoriz-b-dm__form").toggleClass("visible");
-        });
-    </script>
-    <script>
-        (function($) {
-            $(function() {
-                $('select').styler();
-            });
-        })(jQuery);
-    </script>
 </body>
 
 </html>
