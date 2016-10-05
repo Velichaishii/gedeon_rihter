@@ -132,8 +132,9 @@ a, img, a:active, a:focus { outline: none; }
 
 .owl-carousel__left-b { width: 50%; padding-right: 15px; display: inline-block; vertical-align: top; }
 
-.owl-carousel__img-wrap { width: 100%; overflow: hidden; }
-.owl-carousel__img-wrap:hover > img { transform: scale(1.1); }
+.owl-carousel__img-wrap { width: 100%; overflow: hidden; display: block; font-size: 0; }
+
+.owl-carousel__content-b:hover .full-space-img { transform: scale(1.1); }
 
 .owl-carousel__right-b { width: 50%; padding-left: 15px; display: inline-block; vertical-align: top; }
 
@@ -388,7 +389,7 @@ a, img, a:active, a:focus { outline: none; }
 .line-blue::before { width: 30px; height: 5px; background: #004aad; position: absolute; left: 0; top: 50%; content: ""; }
 .line-blue::after { width: 30px; height: 5px; background: #004aad; position: absolute; right: 0; top: 50%; content: ""; }
 
-.full-space-img { width: 100%; height: auto; font-size: 0; }
+.full-space-img { width: 100%; height: auto; -webkit-transition: all 0.5s ease 0s; -moz-transition: all 0.5s ease 0s; -o-transition: all 0.5s ease 0s; transition: all 0.5s ease 0s; }
 
 .btn-b-bottom { margin: 8px 0 0 20px; float: right; }
 
