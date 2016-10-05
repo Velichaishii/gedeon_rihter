@@ -242,7 +242,10 @@
 
 .owl-carousel__img-wrap
     width: 100%
-    height: auto
+    overflow: hidden
+
+    &:hover > img
+        transform: scale(1.1)
 
 .owl-carousel__right-b
     width: 50%
@@ -1642,6 +1645,9 @@
 
     .h2-content-wrap_contacts
         margin-bottom: 25px
+
+    .h3-content
+        margin-top: 20px
 
     .h2-content-wrap_news
         margin-bottom: 30px
