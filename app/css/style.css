@@ -58,6 +58,8 @@ a, img, a:active, a:focus { outline: none; }
 
 .menu-header { display: block; position: relative; z-index: 105; }
 
+#_zero_61835 { display: none; }
+
 .menu-header__list-first-lvl { display: flex; flex-wrap: wrap; justify-content: space-between; font-size: 19px; font-family: "Roboto-Medium"; }
 
 .menu-header__item-first-lvl { display: flex; position: relative; }
@@ -279,7 +281,8 @@ a, img, a:active, a:focus { outline: none; }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-resolution: 1.5dppx) { .achievements-b__ico-handshake { background-image: url('../img/icons-2x-s34c2081b7d.png'); background-size: 60px auto; background-position: 0 -572px; height: 44px; width: 60px; position: absolute; top: 50%; left: 50%; margin-top: -22px; margin-left: -30px; } }
 
 .tape-b__item { padding: 25px 0 25px 0; border-bottom: 1px solid #eaeaea; }
-.tape-b__item:first-child { padding-top: 0; }
+.tape-b__item .content-text-small { margin-bottom: 0; }
+.tape-b__item:first-child:not(.news-listing__item) { padding-top: 0; }
 .tape-b__item:last-child { border-bottom: 0; }
 
 .tape-b__link-img { margin-bottom: 10px; display: block; }
@@ -374,7 +377,12 @@ a, img, a:active, a:focus { outline: none; }
 
 .h2-content-wrap_preparations { margin-top: 10px; margin-bottom: 15px; }
 
-.content-text-small { margin-bottom: 20px; font-family: "Roboto-Regular"; font-size: 19px; line-height: 23px; }
+.content_news-prep pre { margin-bottom: 15px; white-space: normal; }
+.content_news-prep pre:last-child { margin-bottom: 0; }
+
+.content-text-small, .content_news-prep p { margin-bottom: 20px; font-family: "Roboto-Regular"; font-size: 19px; line-height: 23px; white-space: normal; }
+
+.content-text-small span { white-space: normal; }
 
 .content_news-prep { padding-top: 30px; }
 
@@ -517,6 +525,17 @@ a, img, a:active, a:focus { outline: none; }
 .visible { display: inline-block; }
 
 .invisible { display: none; }
+
+.grid-desctop-1-3 { margin-left: -25px; }
+.grid-desctop-1-3:after { display: block; content: ""; clear: both; }
+.grid-desctop-1-3 .grid-item { width: 100%; margin: 0; }
+@media screen and (min-width: 991px) { .grid-desctop-1-3 > .grid-item { width: 33.3333%; float: left; padding-left: 25px; box-sizing: border-box; }
+  .grid-desctop-1-3 > .grid-item:nth-child(3n+1) { clear: both; } }
+
+@media screen and (max-width: 991px) and (min-width: 768px) { .grid-tab-1-2 > .grid-item { padding-left: 25px; width: 50%; float: left; }
+  .grid-tab-1-2 > .grid-item:nth-child(2n+1) { clear: both; } }
+
+@media screen and (max-width: 767px) { .grid-mob-1-1 > .grid-item { padding-left: 25px; width: 100%; float: none; } }
 
 @media screen and (max-width: 1110px) { .logo-white-link { width: 31px; }
   .logo-white-text-wrap { display: none; }

@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <title>Гедеон Рихтер</title>
+    <link href="css/style.css" type="text/css" rel="stylesheet" >
+    <link href="css/jquery.formstyler.css" rel="stylesheet" />
+</head>
+
+<body>
+<div class="site-wrap">
+    <div class="site-wrap__overlay"></div>
+    <header class="header">
+        <nav class="menu-header container">
+            <ul class="menu-header__list-first-lvl">
+                <li class="menu-header__item-first-lvl">
+                    <a class="menu-header__link-first-lvl" href="#">Главная</a>
+                </li>
+                <li class="menu-header__item-first-lvl">
+                    <a class="menu-header__link-first-lvl" href="#">Новости</a>
+                </li>
+                <li class="menu-header__item-first-lvl">
+                    <a class="menu-header__link-first-lvl" href="#">Полезные советы</a>
+                </li>
+                <li class="menu-header__item-first-lvl">
+                    <a class="menu-header__link-first-lvl" href="#">Препараты</a>
+                    <ul class="menu-header__list-second-lvl">
+                        <li class="menu-header__item-second-lvl">
+                            <a class="menu-header__link-second-lvl" href="#">Рецептурный</a>
+                        </li>
+                        <li class="menu-header__item-second-lvl">
+                            <a class="menu-header__link-second-lvl" href="#">Безрецептурный</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-header__item-first-lvl">
+                    <a class="menu-header__link-first-lvl" href="#">Врачам</a>
+                </li>
+                <li class="menu-header__item-first-lvl">
+                    <a class="menu-header__link-first-lvl" href="#">Партнерам</a>
+                </li>
+                <li class="menu-header__item-first-lvl">
+                    <a class="menu-header__link-first-lvl" href="#">Мероприятие</a>
+                </li>
+                <li class="menu-header__item-first-lvl">
+                    <a class="menu-header__link-first-lvl" href="#">О компании</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="bg-gradient-blue">
+            <div class="service-b container clearfix">
+                <a class="logo-white-link" href="#">
+                        <span class="logo-white-emblem-small-wrap">
+                            <img class="logo-white-img-emblem-small" src="img/logo_white-emblem-small.png">
+                        </span>
+                    <span class="logo-white-text-wrap">
+                            <img class="logo-white-img-text" src="img/logo_white-text.png">
+                        </span>
+                    <span class="logo-white-emblem-big-wrap">
+                            <img class="logo-white-img-emblem-big" src="img/logo_white-emblem-big.png">
+                        </span>
+                </a>
+                <div class="btn-b-top mobile-visible">
+                    <ul class="btn-list">
+                        <li class="btn-b-item">
+                                <span class="btn-b__dd-btn btn-b__dd-btn-search popup_open">
+                                    <i class="btn-b__search"></i>
+                                </span>
+                        </li>
+                        <li class="btn-b-item">
+                                <span class="btn-b__dd-btn btn-b__dd-btn-share-white popup_open">
+                                    <i class="btn-b__share-white"></i>
+                                </span>
+                            <ul class="btn-b__dd-list popup">
+                                <li class="btn-b__dd-item">
+                                    <a class="btn-b__dd-link" href="#">
+                                                <span class="btn-b__dd-ico">
+                                                    <i class="btn-b__dd-t"></i>
+                                                </span>
+                                        <span class="btn-b__dd-text">Twitter</span>
+                                    </a>
+                                </li>
+                                <li class="btn-b__dd-item">
+                                    <a class="btn-b__dd-link" href="#">
+                                                <span class="btn-b__dd-ico">
+                                                    <i class="btn-b__dd-f"></i>
+                                                </span>
+                                        <span class="btn-b__dd-text">Facebook</span>
+                                    </a>
+                                </li>
+                                <li class="btn-b__dd-item">
+                                    <a class="btn-b__dd-link" href="#">
+                                                <span class="btn-b__dd-ico">
+                                                    <i class="btn-b__dd-p"></i>
+                                                </span>
+                                        <span class="btn-b__dd-text">Pinterest</span>
+                                    </a>
+                                </li>
+                                <li class="btn-b__dd-item">
+                                    <a class="btn-b__dd-link" href="#">
+                                                <span class="btn-b__dd-ico">
+                                                    <i class="btn-b__dd-in"></i>
+                                                </span>
+                                        <span class="btn-b__dd-text">Linkedin</span>
+                                    </a>
+                                </li>
+                                <li class="btn-b__dd-item">
+                                    <a class="btn-b__dd-link" href="#">
+                                                <span class="btn-b__dd-ico">
+                                                    <i class="btn-b__dd-g-plus"></i>
+                                                </span>
+                                        <span class="btn-b__dd-text">Google +</span>
+                                    </a>
+                                </li>
+                                <li class="btn-b__dd-item">
+                                    <a class="btn-b__dd-link" href="#">
+                                                <span class="btn-b__dd-ico">
+                                                    <i class="btn-b__dd-e-mail"></i>
+                                                </span>
+                                        <span class="btn-b__dd-text">E-mail</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="btn-b-item">
+                                <span class="btn-b__dd-btn btn-b__dd-btn-drop-menu popup_open">
+                                    <i class="btn-b__burger"></i>
+                                </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="search-b popup">
+                    <div class="search-b__dd_lang">
+                        <select title="Язык">
+                            <option data-text="Ru">Русский</option>
+                            <option data-text="Kz">Қазақ</option>
+                            <option data-text="En">English</option>
+                        </select>
+                    </div>
+                    <input class="search-b__entry-field" type="text" placeholder="Название и назначение" title="Название и назначение">
+                    <div class="search-b__dd_category">
+                        <select title="Категория">
+                            <option data-text="Категория">Название 1 категории</option>
+                            <option data-text="Категория 2">Название 2 категории</option>
+                            <option data-text="Категория 3">Название 3 категории</option>
+                        </select>
+                    </div>
+                    <button class="btn-search">Поиск</button>
+                </div>
+                <div class="btn-b-bottom">
+                    <ul class="btn-list">
+                        <li class="btn-b-item">
+                                    <span class="btn-b__dd-btn">
+                                        <i class="btn-b__volume"></i>
+                                    </span>
+                        </li>
+                        <li class="btn-b-item">
+                                    <span class="btn-b__dd-btn btn-b__dd-btn-share-white popup_open">
+                                        <i class="btn-b__share-white"></i>
+                                    </span>
+                            <ul class="btn-b__dd-list popup">
+                                <li class="btn-b__dd-item">
+                                    <a class="btn-b__dd-link" href="#">
+                                                <span class="btn-b__dd-ico">
+                                                    <i class="btn-b__dd-t"></i>
+                                                </span>
+                                        <span class="btn-b__dd-text">Twitter</span>
+                                    </a>
+                                </li>
+                                <li class="btn-b__dd-item">
+                                    <a class="btn-b__dd-link" href="#">
+                                                <span class="btn-b__dd-ico">
+                                                    <i class="btn-b__dd-f"></i>
+                                                </span>
+                                        <span class="btn-b__dd-text">Facebook</span>
+                                    </a>
+                                </li>
+                                <li class="btn-b__dd-item">
+                                    <a class="btn-b__dd-link" href="#">
+                                                <span class="btn-b__dd-ico">
+                                                    <i class="btn-b__dd-p"></i>
+                                                </span>
+                                        <span class="btn-b__dd-text">Pinterest</span>
+                                    </a>
+                                </li>
+                                <li class="btn-b__dd-item">
+                                    <a class="btn-b__dd-link" href="#">
+                                                <span class="btn-b__dd-ico">
+                                                    <i class="btn-b__dd-in"></i>
+                                                </span>
+                                        <span class="btn-b__dd-text">Linkedin</span>
+                                    </a>
+                                </li>
+                                <li class="btn-b__dd-item">
+                                    <a class="btn-b__dd-link" href="#">
+                                                <span class="btn-b__dd-ico">
+                                                    <i class="btn-b__dd-g-plus"></i>
+                                                </span>
+                                        <span class="btn-b__dd-text">Google +</span>
+                                    </a>
+                                </li>
+                                <li class="btn-b__dd-item">
+                                    <a class="btn-b__dd-link" href="#">
+                                                <span class="btn-b__dd-ico">
+                                                    <i class="btn-b__dd-e-mail"></i>
+                                                </span>
+                                        <span class="btn-b__dd-text">E-mail</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="btn-b-item">
+                                    <span class="btn-b__dd-btn btn-b__dd-btn-drop-menu popup_open">
+                                        <i class="btn-b__burger"></i>
+                                    </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="content-wrap content-wrap_news-prep container mobile-page-start">
+        <div class="clearfix">
+            <div class="content-left-b">
+                <div class="h2-content-wrap_news">
+                    <h1 class="h2-content h2-content_tt-n">Новости</h1>
+                </div>
+            </div>
+            <div class="content-right-b">
+                <ul class="option-b">
+                    <li class="option-b__item">
+                        <a class="option-b__link" href="#">
+                            <i class="option-b__ico option-b__ico-share-blue"></i>Поделиться
+                        </a>
+                    </li>
+                    <li class="option-b__item">
+                        <a class="option-b__link" href="#">
+                            <i class="option-b__ico option-b__ico-mail-big"></i>Подписаться
+                        </a>
+                    </li>
+                    <li class="option-b__item">
+                        <a class="option-b__link" href="#">
+                            <i class="option-b__ico option-b__ico-download"></i>Скачать
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="news-listing grid grid-mob-1-1 grid-tab-1-2 grid-desctop-1-3">
+            <div class="grid-item">
+                <div class="news-listing__item">
+                    <a class="tape-b__link-img" href="#">
+                        <img class="full-space-img" src="img/storage.jpg">
+                    </a>
+                    <a class="tape-b__link" href="#">
+                        <h4 class="h4-content">Заголовок новости</h4>
+                    </a>
+                    <p class="content-text-small">Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+                        вэб-дизайне. Lorem Ipsum является стандартной</p>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="news-listing__item">
+                    <a class="tape-b__link-img" href="#">
+                        <img class="full-space-img" src="img/storage.jpg">
+                    </a>
+                    <a class="tape-b__link" href="#">
+                        <h4 class="h4-content">Заголовок новости</h4>
+                    </a>
+                    <p class="content-text-small">Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+                        вэб-дизайне. Lorem Ipsum является стандартной</p>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="news-listing__item">
+                    <a class="tape-b__link-img" href="#">
+                        <img class="full-space-img" src="img/storage.jpg">
+                    </a>
+                    <a class="tape-b__link" href="#">
+                        <h4 class="h4-content">Заголовок новости</h4>
+                    </a>
+                    <p class="content-text-small">Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+                        вэб-дизайне. Lorem Ipsum является стандартной</p>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="news-listing__item">
+                    <a class="tape-b__link-img" href="#">
+                        <img class="full-space-img" src="img/storage.jpg">
+                    </a>
+                    <a class="tape-b__link" href="#">
+                        <h4 class="h4-content">Заголовок новости</h4>
+                    </a>
+                    <p class="content-text-small">Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+                        вэб-дизайне. Lorem Ipsum является стандартной</p>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="news-listing__item">
+                    <a class="tape-b__link-img" href="#">
+                        <img class="full-space-img" src="img/storage.jpg">
+                    </a>
+                    <a class="tape-b__link" href="#">
+                        <h4 class="h4-content">Заголовок новости</h4>
+                    </a>
+                    <p class="content-text-small">Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+                        вэб-дизайне. Lorem Ipsum является стандартной</p>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="news-listing__item">
+                    <a class="tape-b__link-img" href="#">
+                        <img class="full-space-img" src="img/storage.jpg">
+                    </a>
+                    <a class="tape-b__link" href="#">
+                        <h4 class="h4-content">Заголовок новости</h4>
+                    </a>
+                    <p class="content-text-small">Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+                        вэб-дизайне. Lorem Ipsum является стандартной</p>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="news-listing__item">
+                    <a class="tape-b__link-img" href="#">
+                        <img class="full-space-img" src="img/storage.jpg">
+                    </a>
+                    <a class="tape-b__link" href="#">
+                        <h4 class="h4-content">Заголовок новости</h4>
+                    </a>
+                    <p class="content-text-small">Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+                        вэб-дизайне. Lorem Ipsum является стандартной</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="blue-b bg-gradient-blue">
+            <div class="container">
+                <nav class="menu-footer">
+                    <ul class="menu-footer__list">
+                        <li class="menu-footer__item">
+                            <a class="menu-footer__link" href="#">Главная</a>
+                        </li>
+                        <li class="menu-footer__item">
+                            <a class="menu-footer__link" href="#">Партнёрам</a>
+                        </li>
+                        <li class="menu-footer__item">
+                            <a class="menu-footer__link" href="#">О компании</a>
+                        </li>
+                        <li class="menu-footer__item">
+                            <a class="menu-footer__link" href="#">Препараты</a>
+                        </li>
+                    </ul>
+                    <ul class="menu-footer__list">
+                        <li class="menu-footer__item">
+                            <a class="menu-footer__link" href="#">Контакты</a>
+                        </li>
+                        <li class="menu-footer__item">
+                            <a class="menu-footer__link" href="#">Новости</a>
+                        </li>
+                        <li class="menu-footer__item">
+                            <a class="menu-footer__link" href="#">Написать нам</a>
+                        </li>
+                        <li class="menu-footer__item">
+                            <a class="menu-footer__link" href="#">Мероприятия</a>
+                        </li>
+                    </ul>
+                    <ul class="menu-footer__list">
+                        <li class="menu-footer__item">
+                            <a class="menu-footer__link" href="#">Полезные советы</a>
+                        </li>
+                        <li class="menu-footer__item">
+                            <a class="menu-footer__link" href="#">Подписка на новости</a>
+                        </li>
+                        <li class="menu-footer__item">
+                            <a class="menu-footer__link" href="#">Врачам</a>
+                        </li>
+                        <li class="menu-footer__item">
+                            <a class="menu-footer__link" href="#">Лицензии</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="social-b">
+                    <p class="social-b__text">Присоединяйтесь к нам:</p>
+                    <div class="social-b__icons">
+                        <a class="social-b__ico-wrap" href="#">
+                            <i class="social-b__ico social-b__f"></i>
+                        </a>
+                        <a class="social-b__ico-wrap" href="#">
+                            <i class="social-b__ico social-b__t"></i>
+                        </a>
+                        <a class="social-b__ico-wrap" href="#">
+                            <i class="social-b__ico social-b__rss"></i>
+                        </a>
+                        <a class="social-b__ico-wrap" href="#">
+                            <i class="social-b__ico social-b__in"></i>
+                        </a>
+                        <a class="social-b__ico-wrap" href="#">
+                            <i class="social-b__ico social-b__instagram"></i>
+                        </a>
+                        <a class="social-b__ico-wrap" href="#">
+                            <i class="social-b__ico social-b__vk"></i>
+                        </a>
+                        <a class="social-b__ico-wrap" href="#">
+                            <i class="social-b__ico social-b__g-plus"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-b-wrap">
+            <div class="copyright-b container">
+                <p class="text-center"><a class="text-underline text-white" href="#">Gedeon Richter</a> since 1901. All Rights Reserved. Made by aiga.kz</p>
+            </div>
+        </div>
+    </footer>
+    <div class="drop-menu popup">
+            <span class="btn-cancel">
+                <i class="btn-cancel-ico-white"></i>
+                <i class="btn-cancel-ico-blue"></i>
+            </span>
+        <div class="banner-dm">
+            <div class="banner-container">
+                <div class="banner-content">
+                    <p class="banner-text banner-text_dm">Gedeon Richter</p>
+                </div>
+            </div>
+        </div>
+        <div class="authoriz-b-dm">
+            <div class="authoriz-b-dm__links">
+                <span class="authoriz-b-dm__df-entry" href="#">Вход</span>
+                <span class="text-light-blue">/</span>
+                <a class="authoriz-b-dm__link" href="#">Регистрация</a>
+            </div>
+            <form class="authoriz-b-dm__form" method="post">
+                <input class="entry-field entry-field_authoriz" type="text" placeholder="Логин" title="Логин">
+                <input class="entry-field entry-field_authoriz" type="text" placeholder="Пароль" title="Пароль">
+                <button class="btn-authoriz" type="submit">Войти</button>
+            </form>
+        </div>
+        <nav class="drop-menu__nav">
+            <ul class="drop-menu__list-first-lvl">
+                <li class="drop-menu__item-first-lvl">
+                    <a class="drop-menu__link-first-lvl" href="#">Главная</a>
+                </li>
+                <li class="drop-menu__item-first-lvl">
+                    <a class="drop-menu__link-first-lvl" href="#">Новости</a>
+                </li>
+                <li class="drop-menu__item-first-lvl">
+                    <a class="drop-menu__link-first-lvl" href="#">Полезные советы</a>
+                </li>
+                <li class="drop-menu__item-first-lvl">
+                    <a class="drop-menu__link-first-lvl" href="#">Препараты</a>
+                </li>
+                <li class="drop-menu__item-first-lvl">
+                    <a class="drop-menu__link-first-lvl" href="#">Врачам</a>
+                </li>
+                <li class="drop-menu__item-first-lvl">
+                    <a class="drop-menu__link-first-lvl" href="#">Партнерам</a>
+                </li>
+                <li class="drop-menu__item-first-lvl">
+                    <a class="drop-menu__link-first-lvl" href="#">Мероприятие</a>
+                </li>
+                <li class="drop-menu__item-first-lvl">
+                    <a class="drop-menu__link-first-lvl" href="#">О компании</a>
+                </li>
+            </ul>
+        </nav>
+        <img class="logo_blue" src="img/logo_blue.png">
+    </div>
+</div>
+<script src="js/jquery.min.1.11.1.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/jquery.formstyler.min.js"></script>
+</body>
+
+</html>

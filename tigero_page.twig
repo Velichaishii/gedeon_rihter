@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{Shop.desc}}">
+    <meta name="keywords" content="{{Shop.keywords}}">
+    <meta name="author" content="{{Shop.author}}">
+    <link rel="shortcut icon" href="{{Styles.s_icon}}" type="image/png">
+    <title>{% block titlePage %}{% endblock %} &mdash; {{Shop.title}}</title>
+
+    <!-- Bootstrap -->
+    <link href="/airfile/css/style.css" rel="stylesheet">
+    <link href="/airfile/plugins/fancybox/source/jquery.fancybox.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+
+{% macro MenuList(Menus) %}
+    {% import _self as utils %}
+    <ul class="menu ttu">
+        {% for item in Menus %}
+            <li {% if Page.url==item.url %} class="active" {% endif %}><a href='{{item.url}}'>{{item.title}}</a>
+                {% if item.children|length > 0 %}
+                    {{utils.MenuList(item.children)}}
+                {% endif %}
+            </li>
+        {% endfor %}
+    </ul>
+{% endmacro %}
+
+<div class="page_content_wrap">
+    <header>
+        <div class="content_wrap">
+            <div class="menu_icon"><span class="lines"></span></div>
+
+            {% import _self as utils %}
+            {% if SMenus.topnav.elms|length > 0 %}
+                {{utils.MenuList(SMenus.topnav.elms)}}
+            {% endif %}
+
+            {% if PriceFile.0.spath > "" %}
+                <a href="/airdownload/{{PriceFile.0.spath}}" class="suplinks">Прайс лист</a>
+            {% endif %}
+            <a href="#" class="suplinks" data-popup-mess="writeus">Написать нам</a>
+
+            <form action="/catalog/search" class="search_form">
+                <input name="q" placeholder="Что ищем ?" type="text">
+                <button class="send_btn">Искать</button>
+            </form>
+        </div>
+    </header>
+    <div class="second_head">
+        <div class="content_wrap clearfix">
+            <div class="logo">
+                <a href="/"><img src="{{Styles.s_logotype}}" alt=""/></a>
+            </div>
+            <div class="phones">
+                <p>{{Styles.s_tel_one}}</p>
+                <p>{{Styles.s_tel_two}}</p>
+            </div>
+            <div class="cart">
+                <div class="cart_text">
+                    <p class="small">В корзине</p>
+                    <p class="big">Товаров</p>
+                </div>
+                <a href="/checkout/checkout" class="cart_icon">
+                    <div class="cart_items">{% if Basket.items|length > 0 %}{{Basket.totalHow}}{% else %}0{% endif %}</div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="catalog_menu main_page_catalog_menu">
+        <div class="content_wrap clearfix catalog_menu_js_w">
+            <div class="open_catalog_wrap">
+                <a href="#" class="open_catalog">Каталог</a>
+            </div>
+            <ul class="main_catalog_list">
+                {% for item in Categories %}
+                    <li data-nav_content="{{item.id}}" class="first_menu_list_item{% if item.childs|length > 0 %} has_submenu{% endif %}">
+                        <a class="menu_item_link open_submenu" href="/catalog/{{item.id}}">
+                            {{item.title}}{% if item.childs|length > 0 %} <span class="triangle"><i class="fa fa-caret-right"></i></span>{% endif %}
+                        </a>
+
+                        {% if item.childs|length > 0 %}
+                            <ul class="submenu">
+                                {% for child in item.childs %}
+                                    <li class="second_menu_list_item">
+                                        <a class="menu_item_link" href="/catalog/all/{{child.id}}">{{child.title}}</a>
+                                    </li>
+                                {% endfor %}
+                                <li class="second_menu_list_item">
+                                    <a class="menu_item_link" href="/catalog/all/{{item.id}}">Все товары</a>
+                                </li>
+                            </ul>
+                        {% endif %}
+                    </li>
+                {% endfor %}
+            </ul>
+            <ul class="more_catalog_list">
+                <li class="first_menu_list_item has_submenu">
+                    <a href="javascript:;">Еще <span class="triangle"><i class="fa fa-caret-right"></i></span>                            </a>
+                    <ul class="more_catalog_submenu submenu">
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    {% block contentPage %}{% endblock %}
+
+    <div class="map_block_wrap">
+        <div class="how_to_find">
+            <div class="content_wrap tac clearfix">
+                <div class="site_created left tal">Сайт сделан на площадке <a target="_blank" href="http://tigero.kz/">TigeroEngine</a></div>
+                <div class="how_to_find_text dib tac">
+                    Как нас найти <i class="icon-up"></i>
+                </div>
+                <div class="soc_block tar right">
+                    <script type="text/javascript">(function() {
+                            if (window.pluso)if (typeof window.pluso.start == "function") return;
+                            if (window.ifpluso==undefined) { window.ifpluso = 1;
+                                var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+                                s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+                                s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+                                var h=d[g]('body')[0];
+                                h.appendChild(s);
+                            }})();</script>
+                    <div class="pluso" data-background="transparent" data-options="small,square,line,horizontal,counter,theme=06" data-services="vkontakte,odnoklassniki,facebook,twitter,google"></div>
+                </div>
+            </div>
+        </div>
+        <div class="map_block">
+            <div id="map">
+            </div>
+        </div>
+    </div>
+</div>
+<div id="mobile_detection"></div>
+
+<div class="popup writeus" data-popup="writeus">
+    <form action="/mail/sendme">
+        <p class="form_line_wrap"><input class="default" name="mail[name]" type="text" placeholder="Ваше имя *"></p>
+        <p class="form_line_wrap"><input class="default" name="mail[phone]" type="text" placeholder="Телефон"></p>
+        <p class="form_line_wrap"><input class="default" name="mail[contact]" type="text" placeholder="E-mail *"></p>
+        <p class="form_line_wrap field_title">Сообщение</p>
+        <p class="form_line_wrap"><textarea class="default" name="mail[content]"></textarea></p>
+        <p><button type="submit" class="db pink_btn big">Отправить</button></p>
+    </form>
+</div>
+
+<div class="overlay"></div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="/airfile/js/jquery.js"></script>
+<script src="/airfile/plugins/fancybox/source/jquery.fancybox.pack.js"></script>
+{% block headJS %}{% endblock %}
+<script>var textCoord = '{{GeoPositionStore}}';</script>
+<script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+<script src="/airfile/js/custom.js"></script>
+
+</body>
+</html>
