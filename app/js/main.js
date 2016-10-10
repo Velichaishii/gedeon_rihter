@@ -59,4 +59,22 @@ $(document).ready(function() {
         $('select').styler();
     }
 
+    var timeout;
+
+    setTimeout(function () {
+        footer_height();
+    }, 200);
+
+    $(window).resize(function(){
+        clearTimeout(timeout);
+        timeout = setTimeout(function () {
+            footer_height();
+        }, 200);
+    })
 });
+
+function footer_height() {
+    var h = $('.footer').outerHeight();
+
+    $('.site-wrap').css({paddingBottom: h});
+}
