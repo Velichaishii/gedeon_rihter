@@ -10,12 +10,16 @@ html, body
     position: relative
     height: 100%
 
+    &.ovh
+        overflow: hidden
+
 .site-wrap
     position: relative
     overflow: hidden
     color: #333
     min-height: 100%
     padding-bottom: 260px
+    padding-top: 160px
 
 .container
     max-width: 1170px
@@ -36,6 +40,14 @@ html, body
     justify-content: space-between
     font-size: 19px
     font-family: "Roboto-Medium"
+
+.header
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    z-index: 10
+    background: #fff
 
 .menu-header__item-first-lvl
     display: flex
@@ -366,13 +378,14 @@ html, body
     width: 375px
     height: 100%
     background: #ffffff
-    position: absolute
     top: 0
     right: -100%
     z-index: 110
-    overflow: auto
     text-align: center
     font-family: "Roboto-Regular"
+    position: fixed
+    bottom: 0
+    overflow: auto
     font-size: 21px
     +trans()
     &.visible
@@ -531,6 +544,7 @@ html, body
 
     .content-text-small
         margin-bottom: 0
+        text-align: justify
 
     &:first-child:not(.news-listing__item)
         padding-top: 0
@@ -735,6 +749,7 @@ html, body
     font-size: 19px
     line-height: 23px
     white-space: normal
+    text-align: justify
 
 .content-text-small span
     white-space: normal
@@ -1530,11 +1545,11 @@ html, body
 
 @media screen and (max-width: 767px)
     .header
-        width: 100%
-        position: absolute
-        top: 0
-        left: 0
-        z-index: 50
+        //width: 100%
+        //position: absolute
+        //top: 0
+        //left: 0
+        //z-index: 50
 
     .container
         min-width: 320px
@@ -1851,8 +1866,8 @@ html, body
         width: 100px
         height: 100px
 
-    .mobile-page-start
-        padding-top: 79px
+    //.mobile-page-start
+    //    padding-top: 79px
 
     .mobile-invisible
         display: none

@@ -10,6 +10,7 @@ $(document).ready(function() {
 
         if ((!popup.length > 0 ) && (!popup_open.length > 0 )) {
             $(".popup").removeClass("visible");
+            $('body').removeClass('ovh');
             $(".site-wrap__overlay").fadeOut(400);
         }
 
@@ -39,6 +40,7 @@ $(document).ready(function() {
 
     $(".btn-b__dd-btn-drop-menu").click(function(){
         $(".drop-menu").toggleClass("visible");
+        $('body').addClass('ovh');
         $(".site-wrap__overlay").fadeToggle(400);
     });
 
@@ -48,6 +50,7 @@ $(document).ready(function() {
 
     $(".drop-menu .btn-cancel").click(function(){
         $(".drop-menu").toggleClass("visible");
+        $('body').removeClass('ovh');
         $(".site-wrap__overlay").fadeToggle(400);
     });
 
@@ -75,6 +78,15 @@ $(document).ready(function() {
 
 function footer_height() {
     var h = $('.footer').outerHeight();
+    var hh = $('.header').outerHeight();
 
-    $('.site-wrap').css({paddingBottom: h});
+    $('.site-wrap').css({paddingBottom: h, paddingTop: hh});
+}
+
+function goSubscribe(){
+    var email = $('#subscribe-email').val();
+    $('#subscribe-panel').html('Спасибо за подписку!');
+    $.post('/checkout/subscribe',{'email':email}, function(){
+
+    });
 }
