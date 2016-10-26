@@ -74,6 +74,8 @@ $(document).ready(function() {
             footer_height();
         }, 200);
     })
+
+    $('.fancybox').fancybox();
 });
 
 function footer_height() {
