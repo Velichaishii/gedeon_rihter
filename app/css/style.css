@@ -364,7 +364,7 @@ html.ovh, body.ovh { overflow: hidden; }
 
 .content-wrap_news-prep { padding-top: 35px; }
 
-.content-wrap_license-b { padding-top: 50px; padding-bottom: 300px; }
+.content-wrap_license-b { padding-top: 50px; padding-bottom: 255px; }
 
 .content-left-b { width: 68%; padding-right: 30px; display: inline-block; vertical-align: top; }
 
@@ -626,6 +626,7 @@ html.ovh, body.ovh { overflow: hidden; }
   .h2-content-wrap_news { margin-top: 0; margin-bottom: 40px; }
   .h2-content-wrap_preparations { margin-top: 0; margin-bottom: 15px; }
   .h2-content-wrap_contacts { margin-bottom: 30px; }
+  .h2-content-wrap_license { margin-bottom: 35px; }
   .content-text-medium { font-size: 20px; line-height: 24px; }
   .content-text-medium_preparation { margin-bottom: 40px; }
   .content-text-small { margin-bottom: 20px; font-size: 15px; line-height: 20px; }
@@ -706,6 +707,7 @@ html.ovh, body.ovh { overflow: hidden; }
   .h2-content { font-size: 30px; }
   .h2-content-wrap { margin-bottom: 30px; }
   .h2-content-wrap_contacts { margin-bottom: 25px; }
+  .h2-content-wrap_license { margin-bottom: 25px; }
   .h3-content { margin-top: 20px; }
   .h2-content-wrap_news { margin-bottom: 30px; }
   .content-text-medium { font-size: 18px; line-height: 22px; }
