@@ -632,6 +632,7 @@ html.ovh, body.ovh { overflow: hidden; }
   .content-text-small { margin-bottom: 20px; font-size: 15px; line-height: 20px; }
   .content-text-small_tape { margin-bottom: 0; }
   .content_news-prep { padding-top: 35px; padding-bottom: 30px; }
+  .fancybox-nav span { visibility: visible !important; }
   .line-blue::before { width: 30px; height: 5px; background: #004aad; position: absolute; left: 0; top: 50%; content: ""; }
   .line-blue::after { width: 30px; height: 5px; background: #004aad; position: absolute; right: 0; top: 50%; content: ""; }
   .btn-b__dd-list { right: 25px; }
@@ -700,7 +701,6 @@ html.ovh, body.ovh { overflow: hidden; }
   .location-b__photo-wrap { width: 100%; height: auto; }
   .licence-b__int-b { width: 100%; padding: 0; display: block; }
   .licence-b__link { width: 100%; }
-  .fancybox-nav span { visibility: visible !important; }
   .drop-menu { width: 100%; top: 79px; overflow: auto; }
   .banner-dm { display: none; }
   .authoriz-b-dm { padding-top: 30px; }
